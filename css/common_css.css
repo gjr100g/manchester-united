@@ -13,13 +13,14 @@ header #logo{width: 470px;height: 138.5px; position: relative;}
 header .widget{width: 940px;height: 80px; background-color: salmon;float: right;}
 /* 네비게이션 */
 header .nav_row{width: 940px;height: 58.5px;float: right; padding: 0 10px;}
-header nav{width: 869px; height: 58.5px; background-color: seagreen;float: left; display: flex; justify-content:space-between; align-items: center;
+header nav{width: 869px; height: 58.5px;float: left; display: flex; justify-content:space-between; align-items: center;
 flex-flow: row;}
     nav ul{width: 869px; display: flex; justify-content: space-around;}
     nav li{display: inline-block; font-weight: bold;}
     nav li a{color: white; transition: 0.5s;}
     nav li a:hover{color: rgb(216, 0, 0);}
 header .input{width: 51px; height: 100%; background-color: red; float: right;}
+header .input img{width: 35px;height: 35px; margin:10px 8px}
 
 /* !!!!!!여기부터는 푸터 입니다
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
