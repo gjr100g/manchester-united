@@ -63,31 +63,43 @@ display: flex; justify-content: space-between; }
 
 /* 팀 순위 입니다 */
 #RANKING-outer{width: 100%;height: 680px;}
-#RANKING{width: 1410px; height: 680px; margin: 0 auto;background-color: sienna;padding-top:90px;}
+#RANKING{width: 1410px; height: 680px; margin: 0 auto;padding-top:90px;}
 #RANKING h3{margin-bottom: 45px;}
-#RANKING .RANKING-box1{width: 65%; height: 511px; float: left; background-color: chartreuse;}
-    .RANKING-box1 .League{width: 100%; height: 418px; background-color: tomato;}
-    .RANKING-box1 .League ul{display: flex; justify-content: flex-start;}
-    .RANKING-box1 .League li{margin-right: 30px; font-size: 20px;}
-    .RANKING-box1 .League .Premier{width: 100%; height: 88%; background-color: thistle;
-    margin-top: 25px; position: relative;}
-    .RANKING-box1 .League span{color: white; width: 200px; height: 42px; border: solid 1px rgb(206, 0, 0);
+#RANKING .RANKING-box1{width: 65%; height: 100px; float: left;}
+#RANKING .RANKING-box2{width: 35%; height: 100px; float: right; padding-left: 50px;}
+#RANKING .RANKING-box3{width: 100%; height: 411px;padding-left:}
+
+    .RANKING-box3 .League{width: 65%; height: 418px; float: left;}
+    .RANKING-box3 .League ul{display: flex; justify-content: flex-start;}
+    .RANKING-box3 .League li{margin-right: 30px; font-size: 20px; color: black;transition: 0.5s;
+    cursor: pointer;}
+    .RANKING-box3 .League li:hover{color: rgb(199, 0, 0);}
+    .RANKING-box3 .League .Premier{width: 100%; height: 88%; background-image: url(../img/main/Premie.png);
+    margin-top: 25px; position: relative; background-repeat: no-repeat; background-size: cover;
+    background-position:center;}
+    /* 순위표 입니다 */
+    .RANKING-box3 .graph{float: right; width: 35%; height: 418px;}
+    .RANKING-box3 .League .Premier img{width: 350px; margin: 70px 50px;}
+    .RANKING-box3 .League span{color: white; width: 200px; height: 42px; border: solid 1px rgb(206, 0, 0);
          position: absolute; text-align: center; line-height: 41px; font-weight: bold;
-        letter-spacing: 3px; top: 230px; left: 50px;}
-#RANKING .RANKING-box2{width: 35%; height: 511px; float: left; background-color: chocolate; padding-left: 50px;}
-    .RANKING-box2 table{width: 100%; height: 420px;border-collapse :collapse; border-spacing: 5px;}
-    .RANKING-box2 tr{border: solid rgb(141, 141, 141) 1px;}
-    .RANKING-box2 tr:nth-of-type(1){border: none}
-    .RANKING-box2 tr:nth-of-type(2n){height: 12px; border: none;}
-    .RANKING-box2 th:nth-of-type(1){text-align:left;}
-    .RANKING-box2 td:nth-of-type(1){width: 13%; text-align: center; font-weight: bold; background-color: black;
+        letter-spacing: 3px; top: 250px; left: 60px; background-color: black}
+
+    .RANKING-box3 table{width: 89%; height: 420px;border-collapse :collapse; border-spacing: 5px;
+    margin-left: 50px;}
+    .RANKING-box3 tr{border: solid rgb(141, 141, 141) 1px;}
+    .RANKING-box3 tr:nth-of-type(1){border: none; height: 38px;}
+    .RANKING-box3 tr:nth-of-type(2n){height: 12px; border: none;}
+    .RANKING-box3 th:nth-of-type(1){text-align:left;}
+    .RANKING-box3 td:nth-of-type(1){width: 13%; text-align: center; font-weight: bold; background-color: black;
     color: white;}
-    .RANKING-box2 td:nth-of-type(2){width: 27%; font-weight: bold; }
-    .RANKING-box2 td:nth-of-type(3){width: 15%; text-align: center;}
-    .RANKING-box2 td:nth-of-type(4){width: 15%; text-align: center;}
-    .RANKING-box2 td:nth-of-type(5){width: 10%; text-align: center;}
-    .RANKING-box2 td:nth-of-type(6){width: 10%; text-align: center;}
-    .RANKING-box2 td:nth-of-type(7){width: 10%; text-align: center;}
+    .RANKING-box3 td:nth-of-type(2){width: 10%; font-weight: bold; }
+    .RANKING-box3 td:nth-of-type(3){width: 17%; font-weight: bold; }
+    .RANKING-box3 td:nth-of-type(4){width: 15%; text-align: center;}
+    .RANKING-box3 td:nth-of-type(5){width: 15%; text-align: center;}
+    .RANKING-box3 td:nth-of-type(6){width: 10%; text-align: center;}
+    .RANKING-box3 td:nth-of-type(7){width: 10%; text-align: center;}
+    .RANKING-box3 td:nth-of-type(8){width: 10%; text-align: center;}
+    .RANKING-box3 table td img{height: 35px; margin: 3px 0 0 3px;}
 
 
 /* 비디오 입니다 */
