@@ -1,7 +1,98 @@
 @charset "UTF-8";
 
 @media(max-width:599px){
+    #main img{width: 140px; float: right; cursor: pointer;}
 
+    #input{position: absolute; width: 100%; height: 100%; background-color: black; top: 0;
+        z-index: 5; opacity: 0.8; display: none; transform: 0.4s; position: fixed;}
+        #input input{width: 500px; height: 60px; position: absolute; top: 50%; left: 50%;
+        margin-top: -30px; margin-left: -250px;  background: none;font-size: 30px; color: rgb(211, 211, 211);
+        border: solid rgb(187, 187, 187) 2px;border-style: none none solid none;}
+        #input button{width: 70px;height: 70px; border: none; background-color: rgb(94, 94, 94);
+        border-radius: 70px; position: absolute; top: 10%; left: 50%;margin-left: -35px;
+        font-size: 40px; font-weight: bold; color: white; padding-bottom: 10px; cursor: pointer;}
+        /* !!!!여기부터는 해더입니다
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+        header{width: 100%;height: 138.5px; position: relative;}
+        header #up{width: 100%;height: 100%; background-color: #111;}
+        header #down{width: 100%; height: 58.5px; background-color: #332d2e; display: none;}
+        header #main{width: 100%; height: 100%; position: absolute; top: 0;}
+        /* logo가 들어갑니다 */
+        header #logo{width: 470px;height: 138.5px; position: relative;}
+            #logo img[alt="logo_"]{position: absolute; right: 0; width: 800px; height: 139.5px; z-index: 1;}
+            #logo img[alt="logo"]{width: 120px; height: 120px; z-index: 3; position: absolute;
+            top: 48%; left: 20px; margin: -60px 0;}
+            #logo h2{position: absolute;z-index: 2; font-size: 40px;
+            right: 100px; top: 12px; text-shadow: gold 0 0 4px;}
+            /* 후원 브랜드 입니다 */
+        header .widget{width: 940px;height: 80px; float: right; display: none;}
+            .widget img{height: 30px; float: right; margin: 10px;}
+        /* 네비게이션 */
+        header .nav_row{width: 940px;height: 58.5px;float: right; padding: 0 10px; display: none;}
+        .nav_600-outer{width: 100%; height: 100%; background-color: black; opacity: 0.7;
+        position: absolute; z-index: 10;position: fixed; display: none;}
+        .nav_600{position: absolute; top: 0; left: 0;background-color:rgb(216, 0, 0);
+        width: 370px; height: 100%; z-index: 10;padding-top: 20px; position: fixed;
+        display: none;}
+        .nav_600 img{width: 200px; margin: 20px 80px;}
+        .nav_600 input{width: 250px;height: 40px; margin-left: 50px; margin-bottom: 30px;
+        font-size: 20px; padding-left: 20px;}
+        .nav_600 li a{font-size: 25px;width: 250px;padding: 10px; border-radius: 10px;
+        ; display: inline-block; color: white; font-weight: bold;}
+        .nav_600 li a:hover{background-color: rgb(94, 94, 94);}
+        .nav_600 ul{margin-left: 50px;}
+        
+        
+        
+        /* !!!!!!여기부터는 푸터 입니다
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+        footer{width: 100%;height: auto; background-color: #222;}
+            .footer-box{width: 100%; height: 100%; margin: 0 auto; padding-top: 40px;
+            display: flex; flex-flow:wrap; justify-content:center; align-content: flex-end;}
+            .footer-box .text-box{width:350px;height: 290px;margin: 0 10px 20px 10px;}
+                /* 첫번쨰 빅스입니다 */
+                .footer-box .text-box:nth-of-type(1){width:800px;position: relative; margin-bottom: 20px;
+                padding-left: 110px;}
+                .footer-box .text-box h4{font-size: 20px; color: white;}
+                .footer-box .text-box .p{font-size: 15px; color: rgb(207, 207, 207); margin:30px 0;}
+                .footer-box .text-box .a1{ clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+                     width: 50px; height: 52px; background-color: rgb(83, 83, 83);float: left;}
+                .footer-box .text-box ul{width: 580px; position: absolute; bottom: 0; left: 50%; margin-left: -290px;}
+                .footer-box .text-box .a1 img{width: 15px; margin:13px 14px;}     
+                .footer-box .text-box li:nth-of-type(2) img{margin: 17px 16px; width: 17px;}
+                .footer-box .text-box li:nth-of-type(3) img{margin: 18px 14px; width: 20px;}
+                .footer-box .text-box .a2{clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%, 2% 50%);
+                width: 500px; height: 52px; background-color: rgb(83, 83, 83); float: left;}   
+                .footer-box .text-box .a2 div{clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%, 2% 50%);
+                    width: 99.6%; height: 50px;; float: left; margin: 1px; background-color: #111;}  
+                .footer-box .text-box .a2 div p{color: rgb(207, 207, 207); font-size: 12px;
+                line-height: 50px; margin-left: 20px;}
+                .footer-box .text-box .a2 div p strong{font-size: 15px;}
+                .footer-box li div{margin: 5px 0;}
+                /* 두번쨰 박스 입니다 */
+                .footer-box .text-box .LATEST{width: 100%; height: 100px; margin-top: 30px; transition: 0.4s;}
+                .footer-box .text-box .LATEST:hover{transform: scale(1.03);}
+                .footer-box .text-box .photo{background-image: url(../img/main/LATEST1.jpg);background-position: center;
+                background-repeat: no-repeat; background-size: cover; width: 100px;height: 100px;float: left;
+                margin-right: 20px;}
+                .footer-box .text-box .photo2{background-image: url(../img/main/LATEST2.jpg);}
+                .footer-box .text-box p{color: rgb(207, 207, 207);}
+                /* 세번쨰 박스 입니다 */
+                .footer-box .text-box .w{margin: 30px 0;}
+                .footer-box .text-box input[type="email"]{width: 100%; height: 50px; padding-left: 15px;
+                font-size: 16px; border: solid rgb(83, 83, 83) 1px; }
+                .footer-box .text-box input[type="submit"]{height: 45px; width: 130px; font-size: 14px;
+                background-color: rgb(216, 0, 0); color: white; font-weight: bold; cursor: pointer;
+                border: none; margin-top: 10px; transition: 0.4s;}
+                .footer-box .text-box input[type="submit"]:hover{transform: scale(1.03);}
+                /* 가장 밑에 박스 입니다 */
+            .footer-box .bottom{width: 1410px; height: 150px;
+            display: flex; align-items: flex-end; justify-content: space-between;}
+                .footer-box .bottom p{float: left; color:rgb(207, 207, 207);margin-bottom: 40px;}
+                .footer-box .bottom img{float: right; height: 30px;margin-left: 20px; margin-bottom: 40px;}
+        
 }
 
 @media(min-width:600px) and (max-width:1199px){
@@ -35,36 +126,43 @@
             .widget img{height: 30px; float: right; margin: 10px;}
         /* 네비게이션 */
         header .nav_row{width: 940px;height: 58.5px;float: right; padding: 0 10px; display: none;}
-        header nav{width: 869px; height: 58.5px;float: left; display: flex; justify-content:space-between; align-items: center;
-        flex-flow: row;}
-            nav ul{width: 869px; display: flex; justify-content: space-around;}
-            nav li{display: inline-block; font-weight: bold;}
-            nav li a{color: white; transition: 0.5s;}
-            nav li a:hover{color: rgb(216, 0, 0);}
-            /* 네비게이션 버튼 입니다 */
-        header .input{width: 51px; height: 100%; background-color: red; float: right;}
-        header .input img{width: 35px;height: 35px; margin:10px 8px}
+        .nav_600-outer{width: 100%; height: 100%; background-color: black; opacity: 0.7;
+        position: absolute; z-index: 10;position: fixed; display: none;}
+        .nav_600{position: absolute; top: 0; left: 0;background-color:rgb(216, 0, 0);
+        width: 370px; height: 100%; z-index: 10;padding-top: 20px; position: fixed;
+        display: none;}
+        .nav_600 img{width: 200px; margin: 20px 80px;}
+        .nav_600 input{width: 250px;height: 40px; margin-left: 50px; margin-bottom: 30px;
+        font-size: 20px; padding-left: 20px;}
+        .nav_600 li a{font-size: 25px;width: 250px;padding: 10px; border-radius: 10px;
+        ; display: inline-block; color: white; font-weight: bold;}
+        .nav_600 li a:hover{background-color: rgb(94, 94, 94);}
+        .nav_600 ul{margin-left: 50px;}
+        
         
         
         /* !!!!!!여기부터는 푸터 입니다
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-        footer{width: 100%;height: 541px; background-color: #222;}
-            .footer-box{width: 1410px; height: 100%; margin: 0 auto;
-            display: flex; flex-flow:wrap; justify-content: space-between; align-content: flex-end;}
-            .footer-box .text-box{width:450px;height: 290px;}
+        footer{width: 100%;height: auto; background-color: #222;}
+            .footer-box{width: 100%; height: 100%; margin: 0 auto; padding-top: 40px;
+            display: flex; flex-flow:wrap; justify-content:center; align-content: flex-end;}
+            .footer-box .text-box{width:350px;height: 290px;margin: 0 10px 20px 10px;}
                 /* 첫번쨰 빅스입니다 */
+                .footer-box .text-box:nth-of-type(1){width:800px;position: relative; margin-bottom: 20px;
+                padding-left: 110px;}
                 .footer-box .text-box h4{font-size: 20px; color: white;}
                 .footer-box .text-box .p{font-size: 15px; color: rgb(207, 207, 207); margin:30px 0;}
                 .footer-box .text-box .a1{ clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
-                     width: 52px; height: 52px; background-color: rgb(83, 83, 83);float: left;}
+                     width: 50px; height: 52px; background-color: rgb(83, 83, 83);float: left;}
+                .footer-box .text-box ul{width: 580px; position: absolute; bottom: 0; left: 50%; margin-left: -290px;}
                 .footer-box .text-box .a1 img{width: 15px; margin:13px 14px;}     
                 .footer-box .text-box li:nth-of-type(2) img{margin: 17px 16px; width: 17px;}
                 .footer-box .text-box li:nth-of-type(3) img{margin: 18px 14px; width: 20px;}
                 .footer-box .text-box .a2{clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%, 2% 50%);
-                width: 395px; height: 52px; background-color: rgb(83, 83, 83); float: left;}   
+                width: 500px; height: 52px; background-color: rgb(83, 83, 83); float: left;}   
                 .footer-box .text-box .a2 div{clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%, 2% 50%);
-                    width: 393px; height: 50px;; float: left; margin: 1px; background-color: #111;}  
+                    width: 99.6%; height: 50px;; float: left; margin: 1px; background-color: #111;}  
                 .footer-box .text-box .a2 div p{color: rgb(207, 207, 207); font-size: 12px;
                 line-height: 50px; margin-left: 20px;}
                 .footer-box .text-box .a2 div p strong{font-size: 15px;}
@@ -103,6 +201,7 @@ border: solid rgb(187, 187, 187) 2px;border-style: none none solid none;}
 #input button{width: 70px;height: 70px; border: none; background-color: rgb(94, 94, 94);
 border-radius: 70px; position: absolute; top: 10%; left: 50%;margin-left: -35px;
 font-size: 40px; font-weight: bold; color: white; padding-bottom: 10px; cursor: pointer;}
+.nav_600{display: none;}
 /* !!!!여기부터는 해더입니다
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

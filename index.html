@@ -57,15 +57,42 @@
         });
 
 
-        // 상정 제이쿼리 입니다
-        
+        // min-600px 매뉴 제이쿼리 입니다
+        $(function(){
+            $("#main .icon").click(function(){
+                $(".nav_600-outer").fadeIn();
+                $(".nav_600").fadeIn();
+            });
+            $(".nav_600-outer").click(function(){
+                $(".nav_600-outer").hide();
+                $(".nav_600").hide();
+            });
+        });
 
 
     </script>
 
 </head>
 <body>
-    <a href=""></a><div id="input">
+    <div class="nav_600-outer">  
+    </div>
+    <div class="nav_600">
+        <img src="img/main/logo.png" alt="">
+        <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">VIDEOS</a></li>
+                    <li><a href="#">FIXTURES</a></li>
+                    <li><a href="#">PLAYERS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    <a href="#"></a><div id="input">
         <button >x</button>
         <form action="index.html">
             <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/> 
@@ -80,7 +107,8 @@
         <div id="down">
         </div>
         <div id="main">
-            <div><img src="img/main/—Pngtree—-vector-icon_3791388.png" alt="Pngtree"></div>
+            <!-- min-600px 매뉴 아이콘 입니다 -->
+            <div class="icon"><img src="img/main/—Pngtree—-vector-icon_3791388.png" alt="Pngtree"></div>
             <!-- 후원 브랜드 입니다 -->
             <div class="widget">
                 <a href="#"><img src="img/common/adidas.png" alt="adidas"></a>
@@ -219,6 +247,7 @@
                     
                 </table>
             </div>
+            <!-- VS화면 입니다 -->
             <div class="MATCHES-box2">
                 <div class="MATCHES-box-text">
                     <h3><img src="img/main/Lightning.png" alt="Lightning.png">TODAY’S BASKETBALL MATCHES</h3>
@@ -461,7 +490,7 @@
             <div id="STORE">
                 <div class="STORE-text">
                     <h3><img src="img/main/Lightning.png" alt="">BASKETBALL STORE</h3>
-                    <span>상품 보러가기</span>
+                    <a href="#"><span>상품 보러가기</span></a>
                 </div>
                 <!-- 상품 박스 입니다 -->
             <div class="STORE-box">
@@ -633,6 +662,7 @@
                             </div>
                         </div>
                     </li>
+                    <br><br><br>
                     <li>
                         <div class="a1">
                             <img src="img/main/icon2.png" alt="">
@@ -645,6 +675,7 @@
                             </div>
                         </div>
                     </li>
+                    <br><br><br>
                     <li>
                         <div class="a1">
                             <img src="img/main/icon3.png" alt="">
@@ -666,14 +697,14 @@
                 <a href="#">
                     <div class="LATEST">
                         <div class="photo"></div>
-                        <h4>Wirecard Partners with FC Bayern<br>Munich Basketball</h4>
+                        <h4>Wirecard Partners with FC <br>Bayern Munich Basketball</h4>
                         <p>Jun 03,2021</p>
                     </div>   
                 </a>
                 <a href="#">
                     <div class="LATEST">
                         <div class="photo , photo2"></div>
-                        <h4>Wirecard Partners with FC Bayern<br>Munich Basketball</h4>
+                        <h4>Wirecard Partners with FC <br>Bayern Munich Basketball</h4>
                         <p>Jun 03,2021</p>
                     </div>  
                 </a>
