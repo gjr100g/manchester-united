@@ -3,40 +3,42 @@
 @media(max-width:599px){
 
     header nav li:nth-of-type(1) a{color: rgb(216, 0, 0);}
-    h3 img{width: 15px;height: 30px; margin: 0 10px 0 5px;}
-    h3{font-size: 38px;}
+    h3 img{width: 10px;height: 21px; margin: 0 10px 0 5px;}
+    h3{font-size: 25px;}
     
     
     
     /* 슬라아더입니다 */
-    #slidal{width: 100%; height: 724.5px; background-image: url(../img/main/slidal.jpg); 
+    #slidal{width: 100%; height: 500px; background-image: url(../img/main/slidal.jpg); 
         padding: 116px 0 0 0; background-repeat: no-repeat; background-position: center;background-size: cover;}
     #slidal .slidal-box{width: 100%; height: 490px; margin: 0 auto; position: relative;}
-    #slidal .slidal-box .time-box{width: 1410px; height: 100%;  background-image: linear-gradient(to right, rgba(255,0,0,0),black,black,rgba(255,0,0,0));
+    #slidal .slidal-box .time-box{width: 100%; height: 320px;  background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0),black,black,rgba(255,0,0,0));
         ;margin: 0 auto; opacity: 0.8;}
-    #slidal .slidal-box .time-text{width: 700px; height: 490px; position: absolute;top: 0;
-    left: 50%; margin: 0 -705px; padding: 40px 0;} 
-        .slidal-box .time-text p{color: white; text-align: center;font-size: 17px;}
-        .slidal-box .time-text h2{color: white; text-align: center;font-size: 50px; margin: 10px 0;}
-        .slidal-box .days{width: 700px; height: 500px; position: absolute; left: 50%; top: 240px;
-        margin-left: -350px;}
+    #slidal .slidal-box .time-text{width: 500px; height: 490px; position: absolute;top: 0;
+    left: 50%; margin: 0 -250px; padding: 40px 0;} 
+        .slidal-box .time-text p{color: white; text-align: center;font-size: 10px;}
+        .slidal-box .time-text h2{color: white; text-align: center;font-size: 30px; margin: 10px 0;}
+        .slidal-box .days{width: 500px; height: 500px; position: absolute; left: 50%; top: 150px;
+        margin-left: -250px;}
         .slidal-box .days table{margin: 0 auto;}
-        .slidal-box .days table div{width: 100px; height: 80px;border:solid gray 1px;
+        .slidal-box .days table div{width: 70px; height: 50px;border:solid gray 1px;
         transform:skew(-15deg);}
-        .slidal-box .days table th{color: rgb(226, 226, 226); text-align: center; font-size: 40px;}
-        .slidal-box .days table th:nth-of-type(2n){width: 30px;}
+        .slidal-box .days table th{color: rgb(226, 226, 226); text-align: center; font-size: 20px;}
+        .slidal-box .days table th:nth-of-type(2n){width: 10px;}
         .slidal-box .days table td{color: rgb(226, 226, 226); text-align: center;
-        font-size: 18px;font-weight: bold;}
+        font-size: 10px;font-weight: bold;}
         .slidal-box .days span{display: block; margin: 30px auto; width: 170px; height: 45px;
         background-color: rgb(216, 0, 0); color: rgb(219, 219, 219); font-weight: bold;
         text-align: center; line-height: 45px;}
+        .days th div{color: rgb(206, 0, 0);}
     
     /* 경기일정 입니다 */
-    #MATCHES-outer{width: 100%;height: auto; padding: 100px 0;}
+    #MATCHES-outer{width: 100%;height: auto; padding: 50px 0;}
     #MATCHES{width: 100%;height: auto; margin: 0 auto;}
     #MATCHES h3{float: left;}
-    #MATCHES .MATCHES-box-text{width:100%; height: 15%; }
-    #MATCHES .MATCHES-box1{width: 700px; height: 500px; margin: 0 auto;}
+    #MATCHES .MATCHES-box-text{width:100%; height: 40px; }
+    #MATCHES .MATCHES-box1{width: 450px; height: 500px; margin: 0 auto;}
         .MATCHES-box1 table{width: 100%; height: 400px; border-collapse : collapse;}
         .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);}
         .MATCHES-box1 table td:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
@@ -47,27 +49,27 @@
         .MATCHES-box1 table th:nth-last-of-type(2){text-align: center; width: 40%;}
         .MATCHES-box1 table th:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}
     
-    #MATCHES .MATCHES-box2{width: 700px; height: 400px;margin: 0 auto; }
-        .MATCHES-box2 .vs{width: 100%; height: 85%; background-image: url(../img/main/vs.webp);
+    #MATCHES .MATCHES-box2{width: 450px; height: 250px;margin: 0 auto; }
+        .MATCHES-box2 .vs{width: 100%; height: 200px; background-image: url(../img/main/vs.webp);
         background-position: center; background-size: cover; display: flex; align-items: center;
     justify-content: space-around;}
-        .MATCHES-box2 .manchester{margin: 0 80px;}
-        .MATCHES-box2 .manchester h4{color: white; text-align: center; font-size: 20px;}
-        .MATCHES-box2 .manchester img{width: 200px; height: 200px;}
+        .MATCHES-box2 .manchester{margin: 0 60px;}
+        .MATCHES-box2 .manchester h4{color: white; text-align: center; font-size: 18px;}
+        .MATCHES-box2 .manchester img{width: 100px; height: 100px;}
     
     /* 선수단 입니다 */
-    #players{width: 100%; height: auto; background-color: #222; padding: 100px 0 0 0;}
-    #players .name{width: 700px; height: 91.5px; margin: 0 auto;}
+    #players{width: 100%; height: auto; background-color: #222; padding: 50px 0 0 0;}
+    #players .name{width: 450px; height: 91.5px; margin: 0 auto;}
         .name h3{color: white; float: left;}
         .name span{color: white; width: 200px; height: 42px; border: solid 1px rgb(206, 0, 0);
         float: right; margin-top: 5px; text-align: center; line-height: 41px; font-weight: bold;
         letter-spacing: 3px;}
     
-    #players .players-box{width: 700px;height: 1100px; margin: 0 auto;
+    #players .players-box{width: 450px;height: 1300px; margin: 0 auto;
     display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;}
-        .players-box .play{width: 330px; height: 500px; }
+        .players-box .play{width: 450px; height: 250px; }
             .play h4{text-align: center; color: white; font-weight:bold; font-size: 23px; margin-top: 15px;}
-            .play p{text-align: center; color: rgb(219, 219, 219); }
+            .play p{text-align: center; color: rgb(219, 219, 219);}
             .play .Ronaldo{width: 100%; height: 80%; background-image: url(../img/main/players/FW/Cristiano_Ronaldo.png);
             background-size: cover; background-position: center;}
             .play .Pogba{width: 100%; height: 80%; background-image: url(../img/main/players/MF/Paul\ Pogba.jpg);
@@ -79,10 +81,10 @@
     
     /* 팀 순위 입니다 */
     #RANKING-outer{width: 100%;height: auto;}
-    #RANKING{width: 700px; height: 1250px; margin: 0 auto;padding-top:90px; position: relative;}
+    #RANKING{width: 450px; height: 1100px; margin: 0 auto;padding-top:90px; position: relative;}
     #RANKING h3{margin-bottom: 45px;}
-    #RANKING .RANKING-box1{width: 700px; height: 100px;}
-    #RANKING .RANKING-box2{width: 500px; height: 100px; position: absolute; top: 640px;}
+    #RANKING .RANKING-box1{width: 700px; height: 60px;}
+    #RANKING .RANKING-box2{width: 500px; height: 50px; position: absolute; top: 630px;}
                 /* 프리미어리그 입니다 */
     #RANKING .Cup{width: 100%; height: 411px;}
     #RANKING .Cup1{display: block;}
@@ -96,17 +98,17 @@
         margin-top: 25px; position: relative; background-repeat: no-repeat; background-size: cover;
         background-position:center;}
         /* 순위표 입니다 */
-        .Cup .graph{width: 700px; height: auto; margin: 0 auto;}
-        .Cup .League .Premier img{width: 350px; margin: 70px 50px;}
+        .Cup .graph{width: 450px; height: auto; margin: 0 auto;}
+        .Cup .League .Premier img{width: 350px; margin: 70px 50px; display: none;}
         .Cup .League span{color: white; width: 200px; height: 42px; border: solid 1px rgb(206, 0, 0);
                 position: absolute; text-align: center; line-height: 41px; font-weight: bold;
-            letter-spacing: 3px; top: 250px; left: 60px; background-color: black}
+            letter-spacing: 3px; top: 270px; left: 50%; background-color: black; margin-left: -100px;}
     
-        .Cup table{width: 100%; height: 420px;border-collapse :collapse; border-spacing: 5px;
+        .Cup table{width: 100%; height: auto;border-collapse :collapse;
         margin-top: 100px;}
-        .Cup tr{border: solid rgb(141, 141, 141) 1px; height: 60px;}
+        .Cup tr{border: solid rgb(141, 141, 141) 1px; height: 50px;}
         .Cup tr:nth-of-type(1){border: none; height: 38px;}
-        .Cup tr:nth-of-type(2n){height: 12px; border: none;}
+        .Cup tr:nth-of-type(2n){height: 5px; border: none;}
         .Cup th:nth-of-type(1){text-align:left;}
         .Cup td:nth-of-type(1){width: 13%; text-align: center; font-weight: bold; background-color: black;
         color: white;}
@@ -117,7 +119,7 @@
         .Cup td:nth-of-type(6){width: 10%; text-align: center;}
         .Cup td:nth-of-type(7){width: 10%; text-align: center;}
         .Cup td:nth-of-type(8){width: 10%; text-align: center;}
-        .Cup table td img{height: 35px; margin: 3px 0 0 3px;}
+        .Cup table td img{height: 30px; margin: 3px 0 0 3px;}
                 /* 챔피언스리그 입니다 */
     #RANKING .Cup2{display:none;}
         .Cup2 .League .Premier{background-image: url(../img/main/champions.jpg);}
@@ -163,31 +165,47 @@
         .Cup4 td:nth-of-type(6){width: 20.4%;text-align: left; font-weight: bold;}
     
     /* 비디오 입니다 */
-    #VIDEOS{width: 100%;height: 568px;}
-    #VIDEOS .VIDEOS-text{width: 100%; height: 88px;}
+    #VIDEOS{width: 100%;height: 568px; position: relative;}
+    #VIDEOS .VIDEOS-text{width: 100%; height: 60px;}
         .VIDEOS-text h3{text-align: center;}
     #VIDEOS .VIDEOS-box{width: 100%; height: 480px;}
-        .VIDEOS-box iframe{float: left; width: 33.33333%; height: 100%;}
+        .VIDEOS-box iframe{ width: 450px; height: 450px; position: absolute;left: 50%;
+        margin-left: -225px;}
+        .VIDEOS-box iframe:nth-of-type(2){display: none; }
+        .VIDEOS-box iframe:nth-of-type(3){display: none;}
     
     /* 상점입니다 */
-    #STORE-outer{width: 100%; height: 648px; padding: 100px 0;}
-    #STORE-long{width: 100%; height: 448px;}
-    #STORE{width: 700px;height: 448px;margin: 0 auto;}
-        #STORE .STORE-text{width: 100%; height: 20%;}
+    #STORE-outer{width: 100%; height: 1000px; padding: 100px 0;}
+    #STORE-long{width: 100%; height: 100%;}
+    #STORE{width: 450px;height: 100%;margin: 0 auto; position: relative;}
+        #STORE .STORE-text{width: 100%; height: 50px;}
             .STORE-text h3{float: left;}
-            .STORE-text span{float: right; width: 200px; height: 35px; border: solid rgb(214, 0, 0) 1px;
-            margin-top: 10px; text-align: center; line-height: 35px; font-weight: bold; color: black;}
+            .STORE-text span{float: right; width: 200px; height: 35px; border: solid rgb(75, 75, 75) 1px;
+             text-align: center; line-height: 35px; font-weight: bold;margin-right: -100px;
+            color: black; position: absolute;top: 710px;right: 50%;}
         #STORE .STORE-box{width: 100%; height: 80%; position: relative;}
-            #STORE .STORE-box .hide{width: 100%;height: 100%; overflow: hidden;}
-            .STORE-box .Goods{width: 213px; height: 330px;margin: 11px;
-            box-shadow: grey 0 0 10px 1px; border-radius: 5px;display: inline-block; margin-right: 10px;}
-            .STORE-box .Goods .photo{width: 176px;height: 176px; background-color: hotpink;margin: 20px;}
-            .Goods p{text-align: center; margin-top: 5px;}
+            #STORE .STORE-box .hide{width: 100%;height: 100%;}
+            #STORE .STORE-box .hide ul{display: flex;
+                justify-content: space-around; flex-wrap: wrap; flex-direction: row;
+                align-content: space-around;}
+            .STORE-box .Goods{width: 200px; height: 300px;
+            box-shadow: grey 0 0 10px 1px; border-radius: 5px;display: inline-block;
+             margin-right: 10px;}
+            .STORE-box .Goods .photo{width: 160px;height: 160px; background-color: hotpink;margin: 20px;}
+            .Goods p{text-align: center; margin-top: 2px; font-size: 13px;}
             .Goods p a{color: #000;}
-            .Goods p:nth-of-type(2){text-align: center; font-size: 25px; font-weight: bold; color: rgb(194, 0, 0);
-            margin-top: 8px;}
-            .STORE-box ul{width: 100%; height: 100%; display: flex;}
-            .STORE-box li{float: left;}
+            .Goods p:nth-of-type(2){text-align: center; font-size: 20px; font-weight: bold; 
+                color: rgb(194, 0, 0);
+            margin-top: 3px;}
+            .STORE-box ul{width: 100%; height: 100%;}
+            .STORE-box li:nth-of-type(5){display: none;}
+            .STORE-box li:nth-of-type(6){display: none;}
+            .STORE-box li:nth-of-type(7){display: none;}
+            .STORE-box li:nth-of-type(8){display: none;}
+            .STORE-box li:nth-of-type(9){display: none;}
+            .STORE-box li:nth-of-type(10){display: none;}
+      
+           
             .STORE-box li:nth-of-type(1) .photo{background-image: url(../img/main/sh.webp);background-position: center;
             background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
             border-style: none none solid none;}
@@ -202,28 +220,28 @@
             border-style: none none solid none;}
             .STORE-box li:nth-of-type(5) .photo{background-image: url(../img/main/sh5.webp);background-position: center;
             background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
+            border-style: none none solid none; display: none;}
             .STORE-box li:nth-of-type(6) .photo{background-image: url(../img/main/sh6.webp);background-position: center;
             background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
+            border-style: none none solid none; display: none;}
             .STORE-box li:nth-of-type(7) .photo{background-image: url(../img/main/sh7.webp);background-position: center;
             background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
+            border-style: none none solid none; display: none;}
     
             .STORE-box .botten{position: absolute; top: 50%; margin-top: -30px;left: -60px;
-            cursor: pointer;}
+            cursor: pointer; display: none;}
             .STORE-box .botten img{width: 60px; height: 80px;}
             .STORE-box .botten2{position: absolute; top: 50%; margin-top: -30px; right: -60px;
-            cursor: pointer;}
+            cursor: pointer;display: none;}
             .STORE-box .botten2 img{width: 60px; height: 80px;}
             
     
     /* 이번트 입니다 */
-    #Event{width: 100%;height: 405px; background-image: url(../img/main/Event.png);
-    background-repeat: no-repeat; background-size: cover;background-position: center; padding-top: 80px;}
-    #Event .Event-box{width: 1000px; height: 245px; margin: 0 auto; }
-        .Event-box p{color: white; font-weight: bold; font-size: 20px;margin-bottom: 20px;}
-        .Event-box h2{color: white; font-weight: bold; font-size: 50px;letter-spacing: -5px;}
+    #Event{width: 100%;height: 200px; background-image: url(../img/main/Event.png);
+    background-repeat: no-repeat; background-size: cover;background-position: center; padding-top: 30px;}
+    #Event .Event-box{width: 500px; height: 245px; margin: 0 auto; }
+        .Event-box p{color: white; font-weight: bold; font-size: 13px;margin-bottom: 10px;}
+        .Event-box h2{color: white; font-weight: bold; font-size: 20px;letter-spacing: -1px;}
         .Event-box span{width: 150px; height: 45px; background-color: white; color: rgb(223, 0, 0);
         font-weight: bold; display: inline-block; text-align: center; line-height: 45px;
         letter-spacing: 3px; margin-top: 20px;}
@@ -247,10 +265,10 @@ h3{font-size: 38px;}
 #slidal{width: 100%; height: 724.5px; background-image: url(../img/main/slidal.jpg); 
     padding: 116px 0 0 0; background-repeat: no-repeat; background-position: center;background-size: cover;}
 #slidal .slidal-box{width: 100%; height: 490px; margin: 0 auto; position: relative;}
-#slidal .slidal-box .time-box{width: 1410px; height: 100%;  background-image: linear-gradient(to right, rgba(255,0,0,0),black,black,rgba(255,0,0,0));
+#slidal .slidal-box .time-box{width: 700px; height: 100%;  background-image: linear-gradient(to right, rgba(255,0,0,0),black,black,rgba(255,0,0,0));
     ;margin: 0 auto; opacity: 0.8;}
-#slidal .slidal-box .time-text{width: 1410px; height: 490px; position: absolute;top: 0;
-left: 50%; margin: 0 -705px; padding: 40px 0;} 
+#slidal .slidal-box .time-text{width: 700px; height: 490px; position: absolute;top: 0;
+left: 50%; margin: 0 -350px; padding: 40px 0;} 
     .slidal-box .time-text p{color: white; text-align: center;font-size: 17px;}
     .slidal-box .time-text h2{color: white; text-align: center;font-size: 50px; margin: 10px 0;}
     .slidal-box .days{width: 700px; height: 500px; position: absolute; left: 50%; top: 240px;
@@ -648,9 +666,9 @@ display: flex; justify-content: space-between; }
         margin-top: 10px; text-align: center; line-height: 35px;}
     #STORE .STORE-box{width: 100%; height: 80%; position: relative;}
         #STORE .STORE-box .hide{width: 100%;height: 100%; overflow: hidden;}
-        .STORE-box .Goods{width: 260px; height: 330px; background-color: honeydew;margin: 11px;
+        .STORE-box .Goods{width: 260px; height: 330px;margin: 11px;
         box-shadow: grey 0 0 10px 1px; border-radius: 5px;display: inline-block; margin-right: 10px;}
-        .STORE-box .Goods .photo{width: 220px;height: 200px; background-color: hotpink;margin: 20px;}
+        .STORE-box .Goods .photo{width: 220px;height: 200px; margin: 20px;}
         .Goods p{text-align: center; margin-top: 15px;}
         .Goods p:nth-of-type(2){text-align: center; font-size: 25px; font-weight: bold; color: rgb(194, 0, 0);
         margin-top: 8px;}
@@ -662,6 +680,28 @@ display: flex; justify-content: space-between; }
         .STORE-box .botten2{position: absolute; top: 50%; margin-top: -30px; right: -60px;
         cursor: pointer;}
         .STORE-box .botten2 img{width: 60px; height: 80px;}
+        .STORE-box li:nth-of-type(1) .photo{background-image: url(../img/main/sh.webp);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+            .STORE-box li:nth-of-type(2) .photo{background-image: url(../img/main/sh2.jpg);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+            .STORE-box li:nth-of-type(3) .photo{background-image: url(../img/main/sh3.webp);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+            .STORE-box li:nth-of-type(4) .photo{background-image: url(../img/main/sh4.webp);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+            .STORE-box li:nth-of-type(5) .photo{background-image: url(../img/main/sh5.webp);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+            .STORE-box li:nth-of-type(6) .photo{background-image: url(../img/main/sh6.webp);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+            .STORE-box li:nth-of-type(7) .photo{background-image: url(../img/main/sh7.webp);background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+    
         
 
 /* 이번트 입니다 */
