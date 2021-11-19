@@ -78,7 +78,7 @@
                 .footer-box .text-box .photo2{background-image: url(../img/main/LATEST2.jpg);}
                 .footer-box .text-box p{color: rgb(207, 207, 207);}
                 /* 세번쨰 박스 입니다 */
-                .footer-box .text-box .w{margin: 30px 0;width: 400px;}
+                .footer-box .text-box .w{margin: 30px 0;width: 100%;}
                 .footer-box .text-box input[type="email"]{width: 360px; height: 40px; padding-left: 15px;
                 font-size: 16px; border: solid rgb(83, 83, 83) 1px; }
                 .footer-box .text-box input[type="submit"]{height: 45px; width: 130px; font-size: 14px;
