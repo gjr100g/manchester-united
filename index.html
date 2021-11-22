@@ -69,8 +69,16 @@
             });
         });
         // 슬라이더 카운트다운 입니다
- 
-
+        $(function(){
+            $(".botten").click(function(){
+                $(".mm li:last").prependTo(".mm");
+                $(".mm").css("margin-left","-1000px");
+                $(".mm").stop().animate({marginLeft:0},800);
+            });
+            $(".botten2").click(function(){
+                $(".mm").stop().animate({marginLeft:-200},800,);
+            });
+        });
     </script>
 
 </head>
@@ -82,13 +90,13 @@
         <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/>
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">VIDEOS</a></li>
-                    <li><a href="#">FIXTURES</a></li>
-                    <li><a href="#">PLAYERS</a></li>
-                    <li><a href="#">SHOP</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sub1.html">ABOUT</a></li>
+                    <li><a href="sub1.html">NEWS</a></li>
+                    <li><a href="sub1.html">VIDEOS</a></li>
+                    <li><a href="sub1.html">FIXTURES</a></li>
+                    <li><a href="sub1.html">PLAYERS</a></li>
+                    <li><a href="sub1.html">SHOP</a></li>
                 </ul>
             </nav>
 
@@ -120,13 +128,13 @@
             <div class="nav_row">
                 <nav>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">VIDEOS</a></li>
-                        <li><a href="#">FIXTURES</a></li>
-                        <li><a href="#">PLAYERS</a></li>
-                        <li><a href="#">SHOP</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sub1.html">ABOUT</a></li>
+                        <li><a href="sub1.html">NEWS</a></li>
+                        <li><a href="sub1.html">VIDEOS</a></li>
+                        <li><a href="sub1.html">FIXTURES</a></li>
+                        <li><a href="sub1.html">PLAYERS</a></li>
+                        <li><a href="sub1.html">SHOP</a></li>
                     </ul>
                 </nav>
                 <a href="#">
@@ -502,7 +510,7 @@
                     <img src="img/main/pngwing1.com.png" alt="">
                 </div>
                 <div class="hide">
-                    <ul>
+                    <ul class="mm">
                         <li>
                             <div class="Goods">
                                 <div class="photo"></div>

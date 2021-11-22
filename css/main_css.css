@@ -671,7 +671,7 @@ display: flex; justify-content: space-between; }
         .Goods p{text-align: center; margin-top: 15px;}
         .Goods p:nth-of-type(2){text-align: center; font-size: 25px; font-weight: bold; color: rgb(194, 0, 0);
         margin-top: 8px;}
-        .STORE-box ul{width: 100%; height: 100%; display: flex;}
+        .STORE-box .mm{width: 100%; height: 100%; display: flex;}
         .STORE-box li{float: left;}
         .STORE-box .botten{position: absolute; top: 50%; margin-top: -30px;left: -60px;
         cursor: pointer;}

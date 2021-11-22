@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common_css.css">
+    <link rel="stylesheet" href="css/reset_css.css">
+    <link rel="stylesheet" href="css/sub1.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // 목록 아이콘 누굴경우 제이쿼리
+
+        $(function(){
+            $(".nav_row .input").click(function(){
+                $("#input").fadeIn();
+            });
+        });
+        $(function(){
+            $("#input button").click(function(){
+                $("#input").hide();
+            });
+        });
+
+         // min-600px 매뉴 제이쿼리 입니다
+         $(function(){
+            $("#main .icon").click(function(){
+                $(".nav_600-outer").fadeIn();
+                $(".nav_600").fadeIn();
+            });
+            $(".nav_600-outer").click(function(){
+                $(".nav_600-outer").hide();
+                $(".nav_600").hide();
+            });
+        });       
+    </script>
+</head>
+<body>
+
+
+    <div class="nav_600-outer">  
+    </div>
+    <div class="nav_600">
+        <img src="img/main/logo.png" alt="">
+        <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">VIDEOS</a></li>
+                    <li><a href="#">FIXTURES</a></li>
+                    <li><a href="#">PLAYERS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    <a href="#"></a><div id="input">
+        <button >x</button>
+        <form action="index.html">
+            <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/> 
+        </form>
+       
+    </div>
+    <!-- 헤더입니다 -->
+    <header>
+        <div id="up">
+            
+        </div>
+        <div id="down">
+        </div>
+        <div id="main">
+            <!-- min-600px 매뉴 아이콘 입니다 -->
+            <div class="icon"><img src="img/main/—Pngtree—-vector-icon_3791388.png" alt="Pngtree"></div>
+            <!-- 후원 브랜드 입니다 -->
+            <div class="widget">
+                <a href="#"><img src="img/common/adidas.png" alt="adidas"></a>
+                <a href="#"><img src="img/common/kohler.png" alt="kohler"></a>
+                <a href="#"><img src="img/common/leam.png" alt="leam"></a>
+            </div>
+            <!-- 네비게이션 입니다 -->
+            <div class="nav_row">
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                        <li><a href="#">FIXTURES</a></li>
+                        <li><a href="#">PLAYERS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                    </ul>
+                </nav>
+                <a href="#">
+                    <div class="input">
+                        <img src="img/common/Pngtree.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <!-- logo가 들어갑니다 -->
+            <div id="logo">
+                <img src="img/main/logo_.jpg" alt="logo_">
+                <a href="#"> <img src="img/main/logo.png" alt="logo"></a>
+                <h2>Manchester<br>United</h2>
+            </div>   
+        </div>
+    </header>
+    <!-- 전체지역 제목 -->
+    <div class="web-text">
+        <h2>FC Barcelona - First Team</h2>
+    </div>
+    <!-- 선수단 박스 입니다 -->
+    <div id="PLAYERS">
+        <!-- 선수단 박스 텍스트 입니다 -->
+        <div class="PLAYERS-text">
+            <div class="PLAYERS-text-top">
+                <h2>FC Barcelona First Team</h2>
+            </div>
+            <div class="PLAYERS-text-bottom">
+                <div class="botten-box">
+                    <a href="#"><div class="botten">GK</div></a>
+                    <a href="#"><div class="botten">DF</div></a>
+                    <a href="#"><div class="botten">MF</div></a>
+                    <a href="#"><div class="botten">FW</div></a>
+                    <a href="#"><div class="botten">CS</div></a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 골키퍼 입니다 -->
+        <div id="GK">
+            <div id="GK-text"><h2>Goalkeepers</h2></div>
+            <a href="#">
+                <div class="GK1 GK">
+                    <div class="GK1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="GK1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="GK2 GK">
+                    <div class="GK1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="GK1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="GK3 GK">
+                    <div class="GK1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="GK1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+        </div>
+        <!-- 수비수 입니다 -->
+        <div id="DF">
+            <div id="DF-text"><h2>Defenders</h2></div>
+            <a href="#">
+                <div class="DF1 DF">
+                    <div class="DF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="DF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="DF2 DF">
+                    <div class="DF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="DF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="DF3 DF">
+                    <div class="DF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="DF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="DF4 DF">
+                    <div class="DF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="DF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="DF5 DF">
+                    <div class="DF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="DF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+        </div>
+        <!-- 미트필더 입니다 -->
+        <div id="MF">
+            <div id="MF-text"><h2>Midfielders</h2></div>
+            <a href="#">
+                <div class="MF1 MF">
+                    <div class="MF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="MF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="MF2 MF">
+                    <div class="MF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="MF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="MF3 MF">
+                    <div class="MF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="MF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="MF4 MF">
+                    <div class="MF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="MF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="MF5 MF">
+                    <div class="MF1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="MF1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+        </div>
+        <!-- 공격수 입니다 -->
+        <div id="FW">
+            <div id="FW-text"><h2>Forwards</h2></div>
+            <a href="#">
+                <div class="FW1 FW">
+                    <div class="FW1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="FW1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="FW2 FW">
+                    <div class="FW1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="FW1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="FW3 FW">
+                    <div class="FW1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="FW1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="FW4 FW">
+                    <div class="FW1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="FW1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="FW5 FW">
+                    <div class="FW1-text">
+                        <h3>1 다비드 데 헤아</h3>
+                        <p>Goalkeepers</p>
+                    </div>
+                    <div class="FW1-text_under">
+                        <table>
+                            <tr>
+                                <th>HEIGHT</th>
+                                <th>WEIGHT</th>
+                                <th>CLUB DEBUT</th>
+                            </tr>
+                            <tr>
+                                <th>187cm</th>
+                                <th>85kg</th>
+                                <th>2014</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+        </div>
+        <!-- 감독 압나다 -->
+        <div id="CS">
+            <div id="FW-text"><h2>Coaching Staff</h2></div>
+            <a href="#">
+                <div class="CS">
+                    <div class="FW1-text">
+
+                    </div>
+                    <div class="FW1-text_under">
+
+                    </div>
+                    <div class="gradation"></div>
+                </div>
+            </a>
+            <table>
+                <tr>
+                    <th>a</th>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <th>a</th>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <th>a</th>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <th>a</th>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <th>a</th>
+                    <td>a</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-box">
+            <!-- 첫번쨰 박스 입니다 -->
+            <div class="text-box">
+                <h4>GET IN TOUCH</h4>
+                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <ul>
+                    <li>
+                        <div class="a1">
+                            <img src="img/main/icon1.png" alt="">
+                        </div>
+                        <div class="a2">
+                            <div>
+                                <p><strong>Address:</strong>
+                                92-94 High St, Oxford OX1 4BJ, England
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <br><br><br>
+                    <li>
+                        <div class="a1">
+                            <img src="img/main/icon2.png" alt="">
+                        </div>
+                        <div class="a2">
+                            <div>
+                                <p><strong>Address:</strong>
+                                92-94 High St, Oxford OX1 4BJ, England
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <br><br><br>
+                    <li>
+                        <div class="a1">
+                            <img src="img/main/icon3.png" alt="">
+                        </div>
+                        <div class="a2">
+                            <div>
+                                <p><strong>Address:</strong>
+                                92-94 High St, Oxford OX1 4BJ, England
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 두번째 박스 입니다 -->
+            <div class="text-box">
+                <h4>LATEST NEWS</h4>
+                <a href="#">
+                    <div class="LATEST">
+                        <div class="photo"></div>
+                        <h4>Wirecard Partners with FC <br>Bayern Munich Basketball</h4>
+                        <p>Jun 03,2021</p>
+                    </div>   
+                </a>
+                <a href="#">
+                    <div class="LATEST">
+                        <div class="photo , photo2"></div>
+                        <h4>Wirecard Partners with FC <br>Bayern Munich Basketball</h4>
+                        <p>Jun 03,2021</p>
+                    </div>  
+                </a>
+            </div>
+            <div class="text-box">
+                <h4>SUBSCRIBE NEWLETTER</h4>
+                <p class="w">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                     labore et dolore.</p>
+                <form action="aa">
+                    <input type="email" placeholder="Emaail"><br>
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+            <div class="bottom">
+                <p>Copyright ©2021 All rights reserved | This template is made with  by Colorlib</p>
+                <div b>
+                    <img src="img/common/adidas.png" alt="">
+                    <img src="img/common/kohler.png" alt="">
+                    <img src="img/common/leam.png" alt="">  
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
