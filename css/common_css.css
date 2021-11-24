@@ -23,8 +23,8 @@
             #logo img[alt="logo_"]{position: absolute; right: 0; width: 800px; height: 139.5px; z-index: 1;display: none;}
             #logo img[alt="logo"]{width: 70px; height: 70px; z-index: 3; position: absolute;
             top: 50%; left: 20px; margin: -35px 0;}
-            #logo h2{position: absolute;z-index: 2; font-size: 20px;
-            left:100px; top: 25px; text-shadow: gold 0 0 4px;}
+            #logo h2{position: absolute;z-index: 2; font-size: 20px;color: black;
+            left:100px; top: 25px; text-shadow: gold 0 0 2px;}
             /* 후원 브랜드 입니다 */
         header .widget{width: 940px;height: 80px; float: right; display: none;}
             .widget img{height: 30px; float: right; margin: 10px;}
@@ -93,9 +93,9 @@
         
 }
 
-@media(min-width:600px) and (max-width:1199px){
+@media(min-width:600px) and (max-width:1429px){
 
-    #main img{width: 140px; float: right; cursor: pointer;}
+    #main .icon img{width: 100px; float: right; cursor: pointer; margin: 18px 10px;}
 
     #input{position: absolute; width: 100%; height: 100%; background-color: black; top: 0;
         z-index: 5; opacity: 0.8; display: none; transform: 0.4s; position: fixed;}
@@ -117,7 +117,7 @@
             #logo img[alt="logo_"]{position: absolute; right: 0; width: 800px; height: 139.5px; z-index: 1;}
             #logo img[alt="logo"]{width: 120px; height: 120px; z-index: 3; position: absolute;
             top: 48%; left: 20px; margin: -60px 0;}
-            #logo h2{position: absolute;z-index: 2; font-size: 40px;
+            #logo h2{position: absolute;z-index: 2; font-size: 40px;color: black;
             right: 100px; top: 12px; text-shadow: gold 0 0 4px;}
             /* 후원 브랜드 입니다 */
         header .widget{width: 940px;height: 80px; float: right; display: none;}
@@ -190,7 +190,7 @@
         
 }
 
-@media(min-width:1200px){
+@media(min-width:1430px){
 #input{position: absolute; width: 100%; height: 100%; background-color: black; top: 0;
 z-index: 5; opacity: 0.8; display: none; transform: 0.4s; position: fixed;}
 #input input{width: 500px; height: 60px; position: absolute; top: 50%; left: 50%;
@@ -215,7 +215,7 @@ header #logo{width: 470px;height: 138.5px; position: relative;}
     #logo img[alt="logo"]{width: 120px; height: 120px; z-index: 3; position: absolute;
     top: 48%; left: 20px; margin: -60px 0;}
     #logo h2{position: absolute;z-index: 2; font-size: 40px;
-    right: 100px; top: 12px; text-shadow: gold 0 0 4px;}
+    right: 100px; top: 12px; text-shadow: gold 0 0 4px; color: black;}
     /* 후원 브랜드 입니다 */
 header .widget{width: 940px;height: 80px; float: right;}
     .widget img{height: 30px; float: right; margin: 10px;}

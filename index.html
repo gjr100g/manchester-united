@@ -68,15 +68,19 @@
                 $(".nav_600").hide();
             });
         });
-        // 슬라이더 카운트다운 입니다
+        // 상품 스라이더 자바스크립 입니다
         $(function(){
-            $(".botten").click(function(){
-                $(".mm li:last").prependTo(".mm");
-                $(".mm").css("margin-left","-1000px");
-                $(".mm").stop().animate({marginLeft:0},800);
+            $('.botten').click(function(){
+            $('.mm li:last').prependTo('.mm');
+            $('.mm').css('margin-left',-281);
+            $('.mm').stop().animate({marginLeft:0},800);
             });
+
             $(".botten2").click(function(){
-                $(".mm").stop().animate({marginLeft:-200},800,);
+                $(".mm").stop().animate({marginLeft:-281},800,function(){
+                    $(".mm li:first").appendTo(".mm");
+                    $(".mm").css({marginLeft:0});
+                });
             });
         });
     </script>
@@ -146,8 +150,8 @@
             <!-- logo가 들어갑니다 -->
             <div id="logo">
                 <img src="img/main/logo_.jpg" alt="logo_">
-                <a href="#"> <img src="img/main/logo.png" alt="logo"></a>
-                <h2>Manchester<br>United</h2>
+                <a href="index.html"> <img src="img/main/logo.png" alt="logo"></a>
+                <a href="index.html"><h2>Manchester<br>United</h2></a>
             </div>   
         </div>
     </header>
@@ -513,7 +517,7 @@
                     <ul class="mm">
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo photo1"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -525,7 +529,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo2"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -537,7 +541,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo3"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -549,7 +553,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo4"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -561,7 +565,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo5"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -573,7 +577,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo6"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -585,7 +589,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo7"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -597,7 +601,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo  photo8"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -609,7 +613,7 @@
                         </li>
                         <li>
                             <div class="Goods">
-                                <div class="photo"></div>
+                                <div class="photo photo9"></div>
                                 <p>
                                     <a href="#">
                                     뉴 에라 워드 마크<br>
@@ -619,18 +623,7 @@
                                 <p>$15,000</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="Goods">
-                                <div class="photo"></div>
-                                <p>
-                                    <a href="#">
-                                    뉴 에라 워드 마크<br>
-                                    보폴 니트 모자 - 블랙
-                                    </a>
-                                </p>
-                                <p>$15,000</p>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
                

@@ -254,7 +254,7 @@
 
 }
 
-@media(min-width:600px) and (max-width:1199px){
+@media(min-width:600px) and (max-width:1429px){
 header nav li:nth-of-type(1) a{color: rgb(216, 0, 0);}
 h3 img{width: 15px;height: 30px; margin: 0 10px 0 5px;}
 h3{font-size: 38px;}
@@ -431,42 +431,31 @@ display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between
         margin-top: 10px; text-align: center; line-height: 35px; font-weight: bold; color: black;}
     #STORE .STORE-box{width: 100%; height: 80%; position: relative;}
         #STORE .STORE-box .hide{width: 100%;height: 100%; overflow: hidden;}
-        .STORE-box .Goods{width: 213px; height: 330px;margin: 11px;
+        .STORE-box .Goods{width: 96%; height: 330px;margin: 2%;
         box-shadow: grey 0 0 10px 1px; border-radius: 5px;display: inline-block; margin-right: 10px;}
-        .STORE-box .Goods .photo{width: 176px;height: 176px; background-color: hotpink;margin: 20px;}
+        .STORE-box .Goods .photo{width:80%;height: 176px; background-color: hotpink;margin: 10%;}
         .Goods p{text-align: center; margin-top: 5px;}
         .Goods p a{color: #000;}
         .Goods p:nth-of-type(2){text-align: center; font-size: 25px; font-weight: bold; color: rgb(194, 0, 0);
         margin-top: 8px;}
-        .STORE-box ul{width: 100%; height: 100%; display: flex;}
-        .STORE-box li{float: left;}
-        .STORE-box li:nth-of-type(1) .photo{background-image: url(../img/main/sh.webp);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
-        .STORE-box li:nth-of-type(2) .photo{background-image: url(../img/main/sh2.jpg);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
-        .STORE-box li:nth-of-type(3) .photo{background-image: url(../img/main/sh3.webp);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
-        .STORE-box li:nth-of-type(4) .photo{background-image: url(../img/main/sh4.webp);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
-        .STORE-box li:nth-of-type(5) .photo{background-image: url(../img/main/sh5.webp);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
-        .STORE-box li:nth-of-type(6) .photo{background-image: url(../img/main/sh6.webp);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
-        .STORE-box li:nth-of-type(7) .photo{background-image: url(../img/main/sh7.webp);background-position: center;
-        background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-        border-style: none none solid none;}
+        .STORE-box ul{width: 100%; height: 100%;}
+        .STORE-box li{float: left;width: 33.3333%; height: 100%;}
+        .STORE-box li .photo{background-position: center;
+            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
+            border-style: none none solid none;}
+        .STORE-box li .photo1{background-image: url(../img/main/sh.webp);}
+        .STORE-box li .photo2{background-image: url(../img/main/sh2.jpg);}
+        .STORE-box li .photo3{background-image: url(../img/main/sh3.webp);}
+        .STORE-box li .photo4{background-image: url(../img/main/sh4.webp);}
+        .STORE-box li .photo5{background-image: url(../img/main/sh5.webp);}
+        .STORE-box li .photo6{background-image: url(../img/main/sh6.webp);}
+        .STORE-box li .photo7{background-image: url(../img/main/sh7.webp);}
 
         .STORE-box .botten{position: absolute; top: 50%; margin-top: -30px;left: -60px;
-        cursor: pointer;}
+        cursor: pointer; display: none;}
         .STORE-box .botten img{width: 60px; height: 80px;}
         .STORE-box .botten2{position: absolute; top: 50%; margin-top: -30px; right: -60px;
-        cursor: pointer;}
+        cursor: pointer; display: none;}
         .STORE-box .botten2 img{width: 60px; height: 80px;}
         
 
@@ -489,7 +478,7 @@ background-repeat: no-repeat; background-size: cover;background-position: center
 
 
 
-@media(min-width:1200px){
+@media(min-width:1430px){
 header nav li:nth-of-type(1) a{color: rgb(216, 0, 0);}
 h3 img{width: 15px;height: 30px; margin: 0 10px 0 5px;}
 h3{font-size: 38px;}
@@ -671,36 +660,28 @@ display: flex; justify-content: space-between; }
         .Goods p{text-align: center; margin-top: 15px;}
         .Goods p:nth-of-type(2){text-align: center; font-size: 25px; font-weight: bold; color: rgb(194, 0, 0);
         margin-top: 8px;}
-        .STORE-box .mm{width: 100%; height: 100%; display: flex;}
+        .STORE-box .mm{width: 20000px; height: 100%; }
         .STORE-box li{float: left;}
-        .STORE-box .botten{position: absolute; top: 50%; margin-top: -30px;left: -60px;
-        cursor: pointer;}
-        .STORE-box .botten img{width: 60px; height: 80px;}
-        .STORE-box .botten2{position: absolute; top: 50%; margin-top: -30px; right: -60px;
-        cursor: pointer;}
-        .STORE-box .botten2 img{width: 60px; height: 80px;}
-        .STORE-box li:nth-of-type(1) .photo{background-image: url(../img/main/sh.webp);background-position: center;
+        .STORE-box .botten{position: absolute; top: 35px; margin-top: -30px;left: 0;
+        cursor: pointer; height: 340px; transition: 0.4s;}
+        .STORE-box .botten:hover{background-color: rgb(192, 0, 0);opacity: 0.5;}
+        .STORE-box .botten img{width: 40px; height: 60px; margin-top: 140px;}
+        .STORE-box .botten2{position: absolute; top: 35px; margin-top: -30px; right: 0;
+        cursor: pointer;height: 340px; transition: 0.4s;}
+        .STORE-box .botten2:hover{background-color: rgb(192, 0, 0);opacity: 0.5;}
+        .STORE-box .botten2 img{width: 40px; height: 60px; margin-top: 140px;}
+        .STORE-box li .photo{background-position: center;
             background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
             border-style: none none solid none;}
-            .STORE-box li:nth-of-type(2) .photo{background-image: url(../img/main/sh2.jpg);background-position: center;
-            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
-            .STORE-box li:nth-of-type(3) .photo{background-image: url(../img/main/sh3.webp);background-position: center;
-            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
-            .STORE-box li:nth-of-type(4) .photo{background-image: url(../img/main/sh4.webp);background-position: center;
-            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
-            .STORE-box li:nth-of-type(5) .photo{background-image: url(../img/main/sh5.webp);background-position: center;
-            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
-            .STORE-box li:nth-of-type(6) .photo{background-image: url(../img/main/sh6.webp);background-position: center;
-            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
-            .STORE-box li:nth-of-type(7) .photo{background-image: url(../img/main/sh7.webp);background-position: center;
-            background-repeat: no-repeat; background-size: cover; border: solid rgb(141, 141, 141)1px;
-            border-style: none none solid none;}
-    
+        .STORE-box li .photo1{background-image: url(../img/main/sh.webp);}
+        .STORE-box li .photo2{background-image: url(../img/main/sh2.jpg);}
+        .STORE-box li .photo3{background-image: url(../img/main/sh3.webp);}
+        .STORE-box li .photo4{background-image: url(../img/main/sh4.webp);}
+        .STORE-box li .photo5{background-image: url(../img/main/sh5.webp);}
+        .STORE-box li .photo6{background-image: url(../img/main/sh6.webp);}
+        .STORE-box li .photo7{background-image: url(../img/main/sh7.webp);}
+
+
         
 
 /* 이번트 입니다 */

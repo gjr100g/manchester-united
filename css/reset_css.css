@@ -6,3 +6,4 @@ ul,ol,li{list-style: none;}
 html, body{margin: 0; height: 100%;}
 button{border: none;}
 *{font-family: "나눔스퀘어"; box-sizing: border-box;}
+a{text-decoration: none; color: #333;}
