@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common_css.css">
+    <link rel="stylesheet" href="css/reset_css.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // 목록 아이콘 누굴경우 제이쿼리
+
+        $(function(){
+            $(".nav_row .input").click(function(){
+                $("#input").fadeIn();
+            });
+        });
+        $(function(){
+            $("#input button").click(function(){
+                $("#input").hide();
+            });
+        });
+
+         // min-600px 매뉴 제이쿼리 입니다
+         $(function(){
+            $("#main .icon").click(function(){
+                $(".nav_600-outer").fadeIn();
+                $(".nav_600").fadeIn();
+            });
+            $(".nav_600-outer").click(function(){
+                $(".nav_600-outer").hide();
+                $(".nav_600").hide();
+            });
+        });       
+    </script>
+</head>
+<body>
+
+
+    <div class="nav_600-outer">  
+    </div>
+    <div class="nav_600">
+        <img src="img/main/logo.png" alt="">
+        <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sub1.html">ABOUT</a></li>
+                    <li><a href="sub1.html">NEWS</a></li>
+                    <li><a href="sub1.html">VIDEOS</a></li>
+                    <li><a href="sub1.html">FIXTURES</a></li>
+                    <li><a href="sub1.html">PLAYERS</a></li>
+                    <li><a href="sub1.html">SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    <a href="#"></a><div id="input">
+        <button >x</button>
+        <form action="index.html">
+            <input type="text" placeholder="Search here....." onKeypress="javascript:if(event.keyCode==13) {search_onclick_submit}"/> 
+        </form>
+       
+    </div>
+    <!-- 헤더입니다 -->
+    <header>
+        <div id="up">
+            
+        </div>
+        <div id="down">
+        </div>
+        <div id="main">
+            <!-- min-600px 매뉴 아이콘 입니다 -->
+            <div class="icon"><img src="img/main/—Pngtree—-vector-icon_3791388.png" alt="Pngtree"></div>
+            <!-- 후원 브랜드 입니다 -->
+            <div class="widget">
+                <a href="#"><img src="img/common/adidas.png" alt="adidas"></a>
+                <a href="#"><img src="img/common/kohler.png" alt="kohler"></a>
+                <a href="#"><img src="img/common/leam.png" alt="leam"></a>
+            </div>
+            <!-- 네비게이션 입니다 -->
+            <div class="nav_row">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                        <li><a href="#">FIXTURES</a></li>
+                        <li><a href="#">PLAYERS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                    </ul>
+                </nav>
+                <a href="#">
+                    <div class="input">
+                        <img src="img/common/Pngtree.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <!-- logo가 들어갑니다 -->
+            <div id="logo">
+                <img src="img/main/logo_.jpg" alt="logo_">
+                <a href="index.html"> <img src="img/main/logo.png" alt="logo"></a>
+                <a href="index.html"><h2>Manchester<br>United</h2></a>
+            </div>
+        </div>
+    </header>
+    <!--  선수사진, 이름, 동영상 이나오는 박스입니다    ////
+    /////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////// -->
+    <div id="PLAYERS">
+        <div class="PLAYERS-p">
+            <div class="PLAYERS-text">
+
+            </div>
+        </div>
+        <!-- 비디오 입니다 -->
+        <div class="video">
+            <iframe width="894" height="503" src="https://www.youtube.com/embed/fnBjRMqIlpA" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 선수 정보칸 입니다 //////////////////////
+    /////////////////////////////////////////////
+    /////////////////////////////////////////////-->
+    <div id="information">
+        <div class="TRAYECTORIA"></div>
+        <div class="DATOS-PERSONALES"></div> 
+        <div class="ESTADÍSTICAS"></div>
+        <div class="PALMARÉS"></div>
+    </div>
+    <hr>
+    <!-- 선수 사진 및 상점 입니다 ////////////////////
+    ////////////////////////////////////////////////
+    ////////////////////////////////////////////////-->
+    <div id="photo-shop">
+        <div class="photo">
+            <div class="photo-text">
+
+            </div>
+            <div class="photo-box">
+
+            </div>
+        </div>
+        <div id="shop">
+            <div class="shop-text">
+
+            </div>
+            <div class="shop-box">
+                
+            </div>
+        </div>
+    </div>
+    <!-- 다음으로 넘어가는 칸 입니다   ////////
+    /////////////////////////////////////////
+    ///////////////////////////////////////// -->
+    <div id="next">
+
+    </div>
+
+
+
+    <!-- 푸터 입니다    ///////////////////////////////////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////-->
+    <footer>
+        <div class="footer-box">
+            <!-- 첫번쨰 박스 입니다 -->
+            <div class="text-box">
+                <h4>GET IN TOUCH</h4>
+                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <ul>
+                    <li>
+                        <div class="a1">
+                            <img src="img/main/icon1.png" alt="">
+                        </div>
+                        <div class="a2">
+                            <div>
+                                <p><strong>Address:</strong>
+                                92-94 High St, Oxford OX1 4BJ, England
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+  
+                    <li>
+                        <div class="a1">
+                            <img src="img/main/icon2.png" alt="">
+                        </div>
+                        <div class="a2">
+                            <div>
+                                <p><strong>Address:</strong>
+                                92-94 High St, Oxford OX1 4BJ, England
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+      
+                    <li>
+                        <div class="a1">
+                            <img src="img/main/icon3.png" alt="">
+                        </div>
+                        <div class="a2">
+                            <div>
+                                <p><strong>Address:</strong>
+                                92-94 High St, Oxford OX1 4BJ, England
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 두번째 박스 입니다 -->
+            <div class="text-box">
+                <h4>LATEST NEWS</h4>
+                <a href="#">
+                    <div class="LATEST">
+                        <div class="photo"></div>
+                        <h4>Wirecard Partners with FC <br>Bayern Munich Basketball</h4>
+                        <p>Jun 03,2021</p>
+                    </div>   
+                </a>
+                <a href="#">
+                    <div class="LATEST">
+                        <div class="photo , photo2"></div>
+                        <h4>Wirecard Partners with FC <br>Bayern Munich Basketball</h4>
+                        <p>Jun 03,2021</p>
+                    </div>  
+                </a>
+            </div>
+            <div class="text-box">
+                <h4>SUBSCRIBE NEWLETTER</h4>
+                <p class="w">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                     labore et dolore.</p>
+                <form action="aa">
+                    <input type="email" placeholder="Emaail"><br>
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+            <div class="bottom">
+                <p>Copyright ©2021 All rights reserved | This template is made with  by Colorlib</p>
+                <div>
+                    <img src="img/common/adidas.png" alt="">
+                    <img src="img/common/kohler.png" alt="">
+                    <img src="img/common/leam.png" alt="">  
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

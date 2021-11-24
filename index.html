@@ -83,6 +83,41 @@
                 });
             });
         });
+
+        // 슬라이드 남은 경기까지의 시간 자바스크립 입니다
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("b").innerHTML = days;
+        document.getElementById("t").innerHTML = hours;
+        document.getElementById("m").innerHTML = minutes;
+        document.getElementById("s").innerHTML = seconds;
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("b").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+
+
+
     </script>
 
 </head>
@@ -287,22 +322,22 @@
         </div>
         <div class="players-box">
             <div class="play">
-                <a href="#"><div class="Ronaldo"></div></a>
+                <a href="sub2.html"><div class="Ronaldo"></div></a>
                 <h4>Cristiano Ronaldo</h4>
                 <p>FW</p>
             </div>
             <div class="play">
-                <a href="#"><div class="Pogba"></div></a>
+                <a href="sub2.html"><div class="Pogba"></div></a>
                 <h4>Paul Pogba</h4>
                 <p>MF</p>
             </div>   
             <div class="play">
-                <a href="#"><div class="Maguire"></div></a>
+                <a href="sub2.html"><div class="Maguire"></div></a>
                 <h4>Harry Maguire</h4>
                 <p>DF</p>
             </div>
             <div class="play">
-                <a href="#"><div class="deGea"></div></a>
+                <a href="sub2.html"><div class="deGea"></div></a>
                 <h4>David de Gea</h4>
                 <p>GK</p>
             </div>
@@ -341,22 +376,22 @@
                 <div class="graph">
                     <table>
                         <tr><th colspan="3">팀순위</th><th>경기수</th><th>승점</th><th>승</th><th>무</th><th>패</th></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>1</td><td><img src="img/main/Chelsea.png" alt=""></td><td>첼시</td><td>11</td><td>26</td><td>8</td><td>2</td><td>1</td>
                         </tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>2</td><td><img src="img/main/MenCity.png" alt=""></td><td>맨시티</td><td>11</td><td>23</td><td>7</td><td>2</td><td>2</td>
                         </tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>3</td><td><img src="img/main/pngwing.com.png" alt=""></td><td>웨스터햄</td><td>11</td><td>23</td><td>7</td><td>2</td><td>2</td>
                         </tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>4</td><td><img src="img/main/liverpool.png" alt="liverpool"></td><td>리버플</td><td>11</td><td>22</td><td>6</td><td>4</td><td>1</td>
                         </tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>5</td><td><img src="img/main/arsenal.png" alt=""></td><td>아스널</td><td>11</td><td>20</td><td>6</td><td>2</td><td>3</td>
                         </tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>6</td><td><img src="img/main/logo.png" alt=""></td><td>맨유</td><td>11</td><td>17</td><td>5</td><td>2</td><td>4</td>
                         </tr>
                     </table>
@@ -383,19 +418,19 @@
              <!-- 순위표 입니다 -->
                 <div class="graph">
                     <table>
-                        <tr><th></th><th></th><th></th><th></th><th></th></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>결승</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>vs</td><td><img src="img/main/Chelsea.png" alt=""></td><td>첼시</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>4강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>3 : 0</td><td><img src="img/main/MenCity.png" alt=""></td><td>맨시티</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>8강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>1 : 0</td><td><img src="img/main/pngwing.com.png" alt=""></td><td>웨스트햄</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>16강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>2 : 0</td><td><img src="img/main/liverpool.png" alt=""></td><td>리버플</td></tr>
-                        <tr></tr>
-                        <tr><td></td><td></td><td></td><td></td></tr>
-                        <tr></tr>
-                        <tr><td></td><td></td><td></td><td></td></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                     </table>
                 </div>
             </div>
@@ -421,19 +456,19 @@
                 
                 <div class="graph">
                     <table>
-                        <tr><th></th><th></th><th></th><th></th><th></th></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>결승</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>vs</td><td><img src="img/main/Chelsea.png" alt=""></td><td>첼시</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>4강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>3 : 0</td><td><img src="img/main/MenCity.png" alt=""></td><td>맨시티</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>8강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>1 : 0</td><td><img src="img/main/pngwing.com.png" alt=""></td><td>웨스트햄</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>16강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>2 : 0</td><td><img src="img/main/liverpool.png" alt=""></td><td>리버플</td></tr>
-                        <tr></tr>
-                        <tr><td></td><td></td><td></td><td></td></tr>
-                        <tr></tr>
-                        <tr><td></td><td></td><td></td><td></td></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                     </table>
                 </div>
             </div>
@@ -458,19 +493,19 @@
              <!-- 순위표 입니다 -->
                 <div class="graph">
                     <table>
-                        <tr><th></th><th></th><th></th><th></th><th></th></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>결승</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>vs</td><td><img src="img/main/Chelsea.png" alt=""></td><td>첼시</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>4강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>3 : 0</td><td><img src="img/main/MenCity.png" alt=""></td><td>맨시티</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>8강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>1 : 0</td><td><img src="img/main/pngwing.com.png" alt=""></td><td>웨스트햄</td></tr>
-                        <tr></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
                         <tr><td>16강</td><td>맨유</td><td><img src="img/main/logo.png" alt=""></td><td>2 : 0</td><td><img src="img/main/liverpool.png" alt=""></td><td>리버플</td></tr>
-                        <tr></tr>
-                        <tr><td></td><td></td><td></td><td></td></tr>
-                        <tr></tr>
-                        <tr><td></td><td></td><td></td><td></td></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                     </table>
                 </div>
             </div>
@@ -484,15 +519,15 @@
         </div>
         <div class="VIDEOS-box">
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/Ahnby2vUlxM"
-             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+             title="YouTube video player" allow="accelerometer; autoplay; 
              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/USTxhSg9NyM" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            title="YouTube video player"  allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/T4OBjAE7vig" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            title="YouTube video player"  allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
@@ -508,7 +543,7 @@
                 <!-- 상품 박스 입니다 -->
             <div class="STORE-box">
                 <div class="botten">
-                    <img src="img/main/pngwing.com - 복사본.png" alt="">
+                    <img src="img/main/pngwing.com-복사본.png" alt="">
                 </div>
                 <div class="botten2">
                     <img src="img/main/pngwing1.com.png" alt="">
@@ -664,7 +699,7 @@
                             </div>
                         </div>
                     </li>
-                    <br><br><br>
+                   
                     <li>
                         <div class="a1">
                             <img src="img/main/icon2.png" alt="">
@@ -677,7 +712,7 @@
                             </div>
                         </div>
                     </li>
-                    <br><br><br>
+           
                     <li>
                         <div class="a1">
                             <img src="img/main/icon3.png" alt="">
@@ -723,7 +758,7 @@
             </div>
             <div class="bottom">
                 <p>Copyright ©2021 All rights reserved | This template is made with  by Colorlib</p>
-                <div b>
+                <div>
                     <img src="img/common/adidas.png" alt="">
                     <img src="img/common/kohler.png" alt="">
                     <img src="img/common/leam.png" alt="">  

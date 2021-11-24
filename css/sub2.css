@@ -1,0 +1,33 @@
+header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
+/* 선수사진, 이름, 동영상 이나오는 박스입니다    ///////
+/////////////////////////////////////////////////////
+///////////////////////////////////////////////////// */
+#PLAYERS{width: 100%; height: auto; background-color: rgb(216, 216, 216);}
+    .PLAYERS-p{width: 100%; height: 400px; background-image: url(../img/sub2/slidal.jpg);
+    opacity: 0.5; position: relative;}
+        .PLAYERS-text{width: 1500px;height: 100%; background-color: rgb(255, 0, 0); 
+        position: absolute; right: 50%;}
+    /* 비디오 입니다 */
+    .video{width: 100%;height: 500px; position: relative;}
+        .video iframe{width: 1000px; height: 400px; position: absolute; left: 50%;top: 50%;
+        margin:-200px -500px; border: none; box-shadow: gray 0 0 10px 5px;}
+
+/* 선수 정보칸 입니다 //////////////////////
+/////////////////////////////////////////////
+///////////////////////////////////////////// */
+#information{width: 1410px;height: 500px; margin: 0 auto; background-color: green;display: flex;
+flex-direction: row; flex-wrap: wrap; justify-content: space-between;align-content: stretch}
+    .TRAYECTORIA{width: 500px; height: 200px; background-color: khaki; }    
+    .DATOS-PERSONALES{width: 500px; height: 300px; background-color: lightpink;}
+    .ESTADÍSTICAS{width: 500px; height: 300px; background-color: lightblue; margin-top: -100px;}
+    .PALMARÉS{width: 500px; height: 200px; background-color: royalblue;}
+
+/* <!-- 선수 사진 및 상점 입니다 ////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////--> */
+#photo-shop{width: 1410px; height: 500px; background-color: hotpink; margin: 0 auto;}
+
+/* <!-- 다음으로 넘어가는 칸 입니다   ////////
+/////////////////////////////////////////
+///////////////////////////////////////// --> */
+#next{width: 1410px;height: 200px; background-color: gray; margin: 0 auto;}

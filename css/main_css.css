@@ -23,8 +23,8 @@
        }
         .slidal-box .days table{margin: 0 auto;}
         .slidal-box .days table div{width: 70px; height: 50px;border:solid gray 1px;
-        transform:skew(-15deg);}
-        .slidal-box .days table th{color: rgb(226, 226, 226); text-align: center; font-size: 20px;}
+        transform:skew(-15deg);color: rgb(216, 0, 0);line-height: 47px;}
+        .slidal-box .days table th{color: rgb(226, 226, 226); text-align: center; font-size: 25px;}
         .slidal-box .days table th:nth-of-type(2n){width: 10px;}
         .slidal-box .days table td{color: rgb(226, 226, 226); text-align: center;
         font-size: 10px;font-weight: bold;}
@@ -274,7 +274,7 @@ margin: 0 auto; padding: 40px 0;}
     .slidal-box .days{width: 100%; height: auto; position: absolute; top: 240px;}
     .slidal-box .days table{margin: 0 auto;}
     .slidal-box .days table div{width: 100px; height: 80px;border:solid gray 1px;
-    transform:skew(-15deg);}
+    transform:skew(-15deg);color: rgb(216, 0, 0);line-height: 75px;}
     .slidal-box .days table th{color: rgb(226, 226, 226); text-align: center; font-size: 40px;}
     .slidal-box .days table th:nth-of-type(2n){width: 30px;}
     .slidal-box .days table td{color: rgb(226, 226, 226); text-align: center;
@@ -497,7 +497,7 @@ left: 50%; margin: 0 -705px; padding: 40px 0;}
     margin-left: -705px;}
     .slidal-box .days table{margin: 0 auto;}
     .slidal-box .days table div{width: 100px; height: 80px;border:solid gray 1px;
-    transform:skew(-15deg);}
+    transform:skew(-15deg); color: rgb(216, 0, 0);line-height: 75px;}
     .slidal-box .days table th{color: rgb(226, 226, 226); text-align: center; font-size: 40px;}
     .slidal-box .days table th:nth-of-type(2n){width: 30px;}
     .slidal-box .days table td{color: rgb(226, 226, 226); text-align: center;
