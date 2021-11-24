@@ -12,7 +12,7 @@ background-color: #222;}
 .web-text div{width: 100%; height: 40%; background-image: linear-gradient(rgba(0, 0, 0, 0),#222);}
 .web-text h2{text-align: center; font-size: 25px; color: gold; display: inline-block; margin-top: 35px;width: 100%;}
 #PLAYERS{width: 95%; height: auto; background-color:white; margin: 0 auto; 
-    border-radius: 30px; padding-bottom: 10px;}
+    border-radius: 30px; padding-bottom: 10px; padding-top: 15px;}
     .PLAYERS-text{width: 100%;height: 100px; }
         /* 선수목록 제목 입니다  */
         .PLAYERS-text-top{width: 95%; margin: 0 auto;
@@ -198,8 +198,8 @@ flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-directi
         
         .name{width: 100%;height: 70px; margin-top:190px; transition: 0.5s;
         display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
-        .name h3{color: white; font-size: 20px;text-align: center;}
-        .name p{color: white; text-align: center;}
+        .name h3{color: white; font-size: 17px;text-align: center;}
+        .name p{color: white; text-align: center;font-size: 14px;}
         .csname{width: 100%;height: 70px; margin-top:190px; transition: 0.5s;
             display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
             .csname h3{color: white; font-size: 20px;text-align: center;}
