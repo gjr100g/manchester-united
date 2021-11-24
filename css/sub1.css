@@ -6,19 +6,20 @@ background-color: #222;}
 
 @media(max-width:599px){
     header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
-.web-text{width: 100%; height: 150px; background-color: tomato;}
+.web-text{width: 100%; height: 100px; background-image: url(../img/sub1/배경.png); background-size: cover; 
+    background-repeat: no-repeat;}
 .web-text h2{text-align: center; font-size: 25px; color: gold;
-line-height: 150px;}
+line-height: 100px;}
 #PLAYERS{width: 95%; height: auto; background-color:white; margin: 0 auto; 
     border-radius: 30px; padding-bottom: 10px;}
-    .PLAYERS-text{width: 100%;height: 150px; background-color: wheat;}
+    .PLAYERS-text{width: 100%;height: 100px; }
         /* 선수목록 제목 입니다  */
-        .PLAYERS-text-top{width: 95%; margin: 0 auto; background-color: rgb(177, 177, 177);
-        height: 70%;}
+        .PLAYERS-text-top{width: 95%; margin: 0 auto;
+        height: 60%;}
             .PLAYERS-text-top h2{font-size: 20px;margin: 2%; display: inline-block;}
         /* 선수 포지션 버튼입니다     */
-        .PLAYERS-text-bottom{width: 95%; margin: 0 auto; background-color: rgb(255, 188, 188);
-        height: 30%;}
+        .PLAYERS-text-bottom{width: 95%; margin: 0 auto;
+        height: 100px;}
        .PLAYERS-text-bottom .botten-box{width: 90%; margin: 0 auto;
         height: 100px; display: flex; flex-direction: row; justify-content: space-between;}
         .PLAYERS-text-bottom .botten-box a{width: 19%;}
@@ -34,6 +35,10 @@ line-height: 150px;}
         display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
         .name h3{color: white; font-size: 15px;text-align: center;}
         .name p{color: white; text-align: center; font-size: 12px;}
+        .csname{width: 100%;height: 70px; margin-top:150px; transition: 0.5s;
+            display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+            .csname h3{color: white; font-size: 15px;text-align: center;}
+            .csname p{color: white; text-align: center; font-size: 12px;}
         .information{width: 100%; height: 100px; margin: 0 auto;background-color: black;
         border: solid rgb(161, 161, 161) 1px; border-style: solid none none none; display: none;}
         .information table{width: 90%; margin: 0 auto;
@@ -41,12 +46,12 @@ line-height: 150px;}
 
 
     /* 골키퍼 입니다 */
-    #GK{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+    #GK{width: 95%; height: auto; margin: 0 auto; display: flex;
     flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-    #GK-text{width: 100%; height: 70px; background-color: turquoise;}
+    #GK-text{width: 100%; height: 70px;}
         #GK-text h2{font-size: 25px;text-align: center; line-height: 70px;}
         #GK a{width: 48%;height: 200px; margin: 1%;}
-        .GK{width:100%; height: 100%; background-color: violet;}
+        .GK{width:100%; height: 100%;}
         /* 골키퍼 사진 입니다 */
         .GK1{background-image:url(../img/sub1/players/GK/David_de_Gea.jpg);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
@@ -56,12 +61,12 @@ line-height: 150px;}
         background-repeat: no-repeat;background-size: cover;}
 
 
-    #DF{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+    #DF{width: 95%; height: auto;margin: 0 auto; display: flex;
         flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-        #DF-text{width: 100%; height: 100px; background-color: turquoise;}
-            #DF-text h2{font-size: 35px;text-align: center; line-height: 100px;}
+        #DF-text{width: 100%; height: 70px; }
+            #DF-text h2{font-size: 25px;text-align: center; line-height: 70px;}
             #DF a{width: 48%;height: 200px; margin: 1%;}
-            .DF{width:100%; height: 100%; background-color: violet;}
+            .DF{width:100%; height: 100%; }
         /* 수비수 사진 입니다 */
         .DF1{background-image:url(../img/sub1/players/DF/Harry_Maguire.jpg);background-position: center;
             background-repeat: no-repeat;background-size: cover;}
@@ -88,12 +93,12 @@ line-height: 150px;}
 
 
 
-    #MF{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+    #MF{width: 95%; height: auto; margin: 0 auto; display: flex;
         flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-        #MF-text{width: 100%; height: 100px; background-color: turquoise;}
-            #MF-text h2{font-size: 35px;text-align: center; line-height: 100px;}
+        #MF-text{width: 100%; height: 70px;}
+            #MF-text h2{font-size: 25px;text-align: center; line-height: 70px;}
             #MF a{width: 48%;height: 200px; margin: 1%;}
-            .MF{width:100%; height: 100%; background-color: violet;}       
+            .MF{width:100%; height: 100%; }       
         /* 미드필더 사진입니다 */
         .MF1{background-image:url(../img/sub1/players/MF/Paul\ Pogba.jpg);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
@@ -121,12 +126,12 @@ line-height: 150px;}
         background-repeat: no-repeat;background-size: cover;}
 
 
-#FW{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+#FW{width: 95%; height: auto; margin: 0 auto; display: flex;
     flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-    #FW-text{width: 100%; height: 100px; background-color: turquoise;}
-        #FW-text h2{font-size: 35px;text-align: center; line-height: 100px;}
+    #FW-text{width: 100%; height: 70px; }
+        #FW-text h2{font-size: 25px;text-align: center; line-height: 70px;}
         #FW a{width: 48%;height: 200px; margin: 1%;}
-        .FW{width:100%; height: 100%; background-color: violet;}  
+        .FW{width:100%; height: 100%;}  
         /* 공격수 사진입니다 */
         .FW1{background-image:url(../img/sub1/players/FW/Cristiano_Ronaldo.png);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
@@ -144,17 +149,18 @@ line-height: 150px;}
         background-repeat: no-repeat;background-size: cover;}
 
 
-#CS{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+#CS{width: 95%; height: auto;  margin: 0 auto; display: flex;
 flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-direction: column;}
-    #CS-text{width: 100%; height: 100px; background-color: turquoise;}
-        #CS-text h2{font-size: 35px;text-align: center; line-height: 100px;}
+    #CS-text{width: 100%; height: 70px;}
+        #CS-text h2{font-size: 25px;text-align: center; line-height: 70px;}
         #CS a{width: 48%;height: 200px; margin: 1%;}
-        .CS{width:100%; height: 100%; background-color: violet; overflow: hidden;}
+        .CS{width:100%; height: 100%; overflow: hidden;}
         #CS table{width: 98%; height: 250px; margin:0 auto;}
         #CS table th{width: 50%; font-size: 20px; background-color: rgb(218, 218, 218); border-radius: 5px;}
         #CS table td{width: 50%; text-align: center; font-size: 20px; border-radius: 5px;}
         /* 감독 사진입니다 */
-        .CS{background-image: url(../);}
+        .CS{background-image: url(../img/sub1/players/솔샤르.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
 }
 
 
@@ -164,18 +170,19 @@ flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-directi
 
 @media(min-width:600px) and (max-width:1429px){
     header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
-.web-text{width: 100%; height: 150px; background-color: tomato;}
-.web-text h2{text-align: center; background-color: tomato; font-size: 40px; color: gold;
+.web-text{width: 100%; height: 150px;  background-image: url(../img/sub1/배경.png); background-size: cover; 
+    background-repeat: no-repeat;}
+.web-text h2{text-align: center; font-size: 40px; color: gold;
 line-height: 150px;}
 #PLAYERS{width: 95%; height: auto; background-color:white; margin: 0 auto; 
     border-radius: 30px; padding-bottom: 10px;}
-    .PLAYERS-text{width: 100%;height: 150px; background-color: wheat;}
+    .PLAYERS-text{width: 100%;height: 150px;}
         /* 선수목록 제목 입니다  */
-        .PLAYERS-text-top{width: 95%; margin: 0 auto; background-color: rgb(177, 177, 177);
+        .PLAYERS-text-top{width: 95%; margin: 0 auto; 
         height: 70%;}
             .PLAYERS-text-top h2{font-size: 20px; margin: 2%; display: inline-block;}
         /* 선수 포지션 버튼입니다     */
-        .PLAYERS-text-bottom{width: 95%; margin: 0 auto; background-color: rgb(255, 188, 188);
+        .PLAYERS-text-bottom{width: 95%; margin: 0 auto;
         height: 30%;}
         .PLAYERS-text-bottom .botten-box{width: 70%; margin: 0 auto;
         height: 100px; display: flex; flex-direction: row; justify-content: space-between;}
@@ -192,6 +199,10 @@ line-height: 150px;}
         display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
         .name h3{color: white; font-size: 20px;text-align: center;}
         .name p{color: white; text-align: center;}
+        .csname{width: 100%;height: 70px; margin-top:190px; transition: 0.5s;
+            display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+            .csname h3{color: white; font-size: 20px;text-align: center;}
+            .csname p{color: white; text-align: center;}
         .information{width: 100%; height: 100px; margin: 0 auto;background-color: black;
         border: solid rgb(161, 161, 161) 1px; border-style: solid none none none; display: none;}
         .information table{width: 90%; margin: 0 auto;
@@ -199,12 +210,12 @@ line-height: 150px;}
 
 
     /* 골키퍼 입니다 */
-    #GK{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+    #GK{width: 95%; height: auto; margin: 0 auto; display: flex;
     flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-    #GK-text{width: 100%; height: 100px; background-color: turquoise;}
+    #GK-text{width: 100%; height: 100px;}
         #GK-text h2{font-size: 35px;text-align: center; line-height: 100px;}
         #GK a{width: 31.3333%;height: 250px; margin: 1%;}
-        .GK{width:100%; height: 100%; background-color: violet;}
+        .GK{width:100%; height: 100%; }
         /* 골키퍼 사진 입니다 */
         .GK1{background-image:url(../img/sub1/players/GK/David_de_Gea.jpg);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
@@ -214,12 +225,12 @@ line-height: 150px;}
         background-repeat: no-repeat;background-size: cover;}
 
 
-    #DF{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+    #DF{width: 95%; height: auto;  margin: 0 auto; display: flex;
         flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-        #DF-text{width: 100%; height: 100px; background-color: turquoise;}
+        #DF-text{width: 100%; height: 100px;}
             #DF-text h2{font-size: 35px;text-align: center; line-height: 100px;}
             #DF a{width: 31.3333%;height: 250px; margin: 1%;}
-            .DF{width:100%; height: 100%; background-color: violet;}
+            .DF{width:100%; height: 100%;}
         /* 수비수 사진 입니다 */
         .DF1{background-image:url(../img/sub1/players/DF/Harry_Maguire.jpg);background-position: center;
             background-repeat: no-repeat;background-size: cover;}
@@ -244,12 +255,12 @@ line-height: 150px;}
         .DF11{background-image:url(../img/sub1/players/DF/필\ 존스.jpg);background-position: center;
             background-repeat: no-repeat;background-size: cover;}
 
-    #MF{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+    #MF{width: 95%; height: auto; margin: 0 auto; display: flex;
         flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-        #MF-text{width: 100%; height: 100px; background-color: turquoise;}
+        #MF-text{width: 100%; height: 100px;}
             #MF-text h2{font-size: 35px;text-align: center; line-height: 100px;}
             #MF a{width: 31.3333%;height: 250px; margin: 1%;}
-            .MF{width:100%; height: 100%; background-color: violet;}       
+            .MF{width:100%; height: 100%;}       
         /* 미드필더 사진입니다 */
         .MF1{background-image:url(../img/sub1/players/MF/Paul\ Pogba.jpg);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
@@ -277,12 +288,12 @@ line-height: 150px;}
         background-repeat: no-repeat;background-size: cover;}
 
 
-#FW{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+#FW{width: 95%; height: auto;  margin: 0 auto; display: flex;
     flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
-    #FW-text{width: 100%; height: 100px; background-color: turquoise;}
+    #FW-text{width: 100%; height: 100px; }
         #FW-text h2{font-size: 35px;text-align: center; line-height: 100px;}
         #FW a{width: 31.3333%;height: 250px; margin: 1%;}
-        .FW{width:100%; height: 100%; background-color: violet;}  
+        .FW{width:100%; height: 100%; }  
         /* 공격수 사진입니다 */
         .FW1{background-image:url(../img/sub1/players/FW/Cristiano_Ronaldo.png);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
@@ -299,17 +310,18 @@ line-height: 150px;}
         .FW7{background-image:url(../img/sub1/players/FW/타히트\ 총.jpg);background-position: center;
         background-repeat: no-repeat;background-size: cover;}
 
-#CS{width: 95%; height: auto; background-color: tomato; margin: 0 auto; display: flex;
+#CS{width: 95%; height: auto;  margin: 0 auto; display: flex;
 flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-direction: column;}
-    #CS-text{width: 100%; height: 100px; background-color: turquoise;}
+    #CS-text{width: 100%; height: 100px; }
         #CS-text h2{font-size: 35px;text-align: center; line-height: 100px;}
         #CS a{width: 31.3333%;height: 250px; margin: 1%;}
-        .CS{width:100%; height: 100%; background-color: violet;}
+        .CS{width:100%; height: 100%; }
         #CS table{width: 98%; height: 250px; margin:0 auto;}
         #CS table th{width: 50%; font-size: 20px; background-color: rgb(218, 218, 218);}
         #CS table td{width: 50%; text-align: center; font-size: 20px;}
         /* 감독 사진입니다 */
-        .CS{background-image: url(../);}
+        .CS{background-image: url(../img/sub1/players/솔샤르.png);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
     
 }
 
@@ -348,6 +360,10 @@ width: 100%;}
         
         .name{width: 100%;height: 70px; margin-top:310px; transition: 0.5s;
         display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+        .csname{width: 100%;height: 70px; margin-top:310px; transition: 0.5s;
+            display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+            .csname h3{color: white; font-size: 30px;text-align: center;}
+            .csname p{color: white; text-align: center;}
         .name h3{color: white; font-size: 30px;text-align: center;}
         .name p{color: white; text-align: center;}
         .information{width: 100%; height: 100px; margin: 0 auto;background-color: black;
@@ -463,13 +479,14 @@ flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-directi
     #CS-text{width: 100%; height: 100px; background-color: turquoise;}
         #CS-text h2{font-size: 35px;text-align: center; line-height: 100px;}
         #CS a{width: 31.3333%;height: 380px; margin: 1%;}
-        .CS{width:100%; height: 100%; background-color: violet;}
+        .CS{width:100%; height: 100%;}
         #CS table{width: 98%; height: 250px; margin:0 auto; margin-bottom: 10px;}
         #CS table th{width: 50%; font-size: 20px; background-color: rgb(218, 218, 218);border-radius: 5px;}
         #CS table td{width: 50%; text-align: center; font-size: 20px;border-radius: 5px; 
         background-color: rgb(236, 236, 236);}
         /* 감독 사진입니다 */
-        .CS{background-image: url(../);}
+        .CS{background-image: url(../img/sub1/players/솔샤르.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
     
 }
 

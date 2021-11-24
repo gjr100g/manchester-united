@@ -182,7 +182,7 @@
                 border: none; margin-top: 10px; transition: 0.4s;}
                 .footer-box .text-box input[type="submit"]:hover{transform: scale(1.03);}
                 /* 가장 밑에 박스 입니다 */
-            .footer-box .bottom{width: 1410px; height: 150px;
+            .footer-box .bottom{width: 1410px; height: 150px; padding: 0 20px;
             display: flex; align-items: flex-end; justify-content: space-between;}
                 .footer-box .bottom p{float: left; color:rgb(207, 207, 207);margin-bottom: 40px;}
                 .footer-box .bottom img{float: right; height: 30px;margin-left: 20px; margin-bottom: 40px;}
