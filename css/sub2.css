@@ -34,47 +34,74 @@ header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
 /* 선수 정보칸 입니다 //////////////////////
 /////////////////////////////////////////////
 ///////////////////////////////////////////// */
-#information{width: 1410px;height: 500px; margin: 0 auto; background-color: green;display: flex;
-flex-direction: row; flex-wrap: wrap; justify-content: space-between;align-content: stretch}
+#information{width: 1410px;height: 700px; margin: 0 auto;display: flex;
+flex-direction: row; flex-wrap: wrap; justify-content: space-between;align-content: stretch;
+position:relative;}
 #information hr{border: solid rgb(199, 169, 0) 2px; margin-bottom: 15px;}
+#information img[alt="logo2"]{width: 200px; position: absolute; left: 50%;top: 50%;
+margin: -100px; opacity: 0.7;}
 
-    .TRAYECTORIA{width: 500px; height: 200px; background-color: khaki; } 
-        .TRAYECTORIA h3{font-size: 22px;}  
+    .TRAYECTORIA{width: 35%; height: 40%;} 
+        .TRAYECTORIA h3{font-size: 22px;margin-bottom: 10px;}  
         .TRAYECTORIA li{list-style:disc; margin: 5px 0 0 32px; }
 
-    .DATOS-PERSONALES{width: 500px; height: 300px; background-color: lightpink;}
-        .DATOS-PERSONALES h3{font-size: 22px;}
-        .DATOS-PERSONALES table{width: 100%; font-size: 18px;}
+    .DATOS-PERSONALES{width: 35%; height: 60%;}
+        .DATOS-PERSONALES h3{font-size: 25px;margin-bottom: 10px;}
+        .DATOS-PERSONALES table{width: 100%; font-size: 22px;}
         .DATOS-PERSONALES th{text-align: left;}
-        .DATOS-PERSONALES tr:nth-of-type(2) td{font-size: 25px;}
-        .DATOS-PERSONALES td{color: rgb(88, 88, 88); width: 50%;}
+        .DATOS-PERSONALES tr:nth-of-type(2) td{font-size: 30px;}
+        .DATOS-PERSONALES tr:nth-of-type(2n) td{padding-bottom: 15px;}
+        .DATOS-PERSONALES td{color: rgb(88, 88, 88); width: 70%;}
 
-    .ESTADÍSTICAS{width: 500px; height: 300px; background-color: lightblue; margin-top: -100px;}
-        .ESTADÍSTICAS h3{font-size: 22px;}
+    .ESTADÍSTICAS{width: 35%; height: 60%;margin-top: -9.9%;}
+        .ESTADÍSTICAS h3{font-size: 22px;margin-bottom: 10px;}
         .ESTADÍSTICAS table{width: 100%;}
-        .ESTADÍSTICAS th{text-align: left; font-size: 50px; background-color: goldenrod;
-        height: 50px;color: rgb(66, 66, 66);}
-        .ESTADÍSTICAS td{font-weight: bold;color: gray;font-size: 15px; height: 15px;}
+        .ESTADÍSTICAS th{text-align: left; font-size: 60px;
+        height: 50px;color: rgb(66, 66, 66);width: 50%;}
+        .ESTADÍSTICAS td{font-weight: bold;color: gray;font-size: 20px; height: 15px;
+        padding-bottom:30px;}
         .ESTADÍSTICAS button{font-size: 18px;color: rgb(216, 0, 0);background: none;
-        cursor: pointer; margin-top: 15px;letter-spacing:-2px}
+        cursor: pointer; margin-top: 30px;letter-spacing:-2px}
 
-    .PALMARÉS{width: 500px; height: 200px; background-color: royalblue;}
-        .PALMARÉS h3{font-size: 22px;}
+    .RESOLUTION{width: 35%; height: 40%;}
+        .RESOLUTION h3{font-size: 22px;margin-bottom: 10px;}
+        .RESOLUTION p{font-size: 30px; color: gray;}
+        
+        
 
 /* <!-- 선수 사진 및 상점 입니다 ////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////--> */
-#photo-shop{width: 1410px; height: 500px; background-color: hotpink; margin: 0 auto;}
+#photo-shop{width: 1410px; height: 700px; background-color: hotpink; margin: 0 auto;}
     .photo{width: 70%; height: 100%; float: left ;background-color: salmon;}
-        .photo-text{width: 100%; height: 13%; background-color: slateblue;}
-        .photo-box{width: 85%; height: 73%; background-color: springgreen;}
-            .photo1{width: 70%; height: 100%; background-color: rgb(5, 56, 99);float: left;}
-            .photo2{width: 30%; height: 50%; background-color: rgb(91, 216, 158);float: right;}
-            .photo3{width: 30%; height: 50%; background-color: rgb(142, 90, 226);float: right;}
-    .shop{width: 30%;height: 100%; float: right; background-color: skyblue;}
-        .shop-text{width: 100%; height: 13%; background-color: rgb(184, 173, 255);}
-        .shop-box{width: 40%; height: 73%; background-color: rgb(216, 0, 0);margin: 0 auto;
-        opacity: 0.5;}
+        .photo-text{width: 100%; height: 10%; background-color: slateblue;}
+            .photo-text h2{font-size: 30px; line-height: 100px;}
+        .photo-box{width: 85%; height: 80%; background-color: springgreen;}
+            .photo1{width: 70%; height: 100%;background-image: url(../img/sub2/호날두사진1.jpg); 
+            float: left; background-position: center;background-size: cover;}
+            .photo2{width: 30%; height: 50%;float: right; background-image: url(../img/sub2/호날두사진2.jpg)
+            ;background-position: center;background-size: cover;}
+            .photo3{width: 30%; height: 50%;float: right; background-image: url(../img/sub2/호날두사진3.jpg)
+            ;background-position: center;background-size: cover;}
+    .shop{width: 30%;height: 100%; float: right; background-color: skyblue; overflow: hidden;
+    position: relative;}
+        .shop-text{width: 100%; height: 10%; background-color: rgb(184, 173, 255);}
+        .shop-box{width: 50%; height: 80%; background-color: rgb(122, 122, 122);margin: 0 auto;
+        padding-top: 40px; }
+            .shop-box .bu1{width:30px;height: 30px;background-color: rgb(216, 0, 0);
+            border-radius: 30px; margin-left: 65px;cursor: pointer;}
+            .shop-box .bu2{width: 30px;height: 30px;background-color: rgb(0, 9, 133);
+            border-radius: 30px;margin-left: 10px;cursor: pointer;}
+        .shop-po{width: 600px;height: 60%; position: absolute;top: 10%; 
+        margin-top: 85px; margin-left: 105px; transition: 0.4s;}
+            .shop-po img:nth-of-type(1){width: 250px; margin-left: -20px;margin-top: 30px;float: left;}
+            .shop-po .bu1{position: absolute; bottom:80px;left: -10px; width: 240px;font-weight:bold;
+            height: 50px; font-size: 20px;background-color: rgb(216, 0, 0);color: white;
+            cursor: pointer;}
+            .shop-po .bu2{position: absolute; bottom:80px;right: 20px; width: 240px;font-weight:bold;
+            height: 50px; font-size: 20px;background-color: rgb(216, 0, 0);color: white;}
+            .shop-po img:nth-of-type(2){width: 280px; margin-left: -20px;margin-top: 30px;float: right;
+            cursor: pointer;}
 
 /* <!-- 다음으로 넘어가는 칸 입니다   ////////
 /////////////////////////////////////////

@@ -34,6 +34,19 @@
                 $(".nav_600").hide();
             });
         });       
+
+        // 상점 유니폼 슬라이드
+        $(function(){
+            $(".bu1").click(function(){
+                $('.shop-po').css({marginLeft:"105px"})
+            });
+        });
+        $(function(){
+            $(".bu2").click(function(){
+                $('.shop-po').css({marginLeft:"-250px"})
+            });
+        });
+
     </script>
 </head>
 <body>
@@ -134,7 +147,8 @@
     <!-- 선수 정보칸 입니다 //////////////////////
     /////////////////////////////////////////////
     /////////////////////////////////////////////-->
-    <div id="information">
+    <div id="information"> 
+        <img src="img/sub2/logo2.png" alt="logo2">
         <div class="TRAYECTORIA">
             <h3>TRAYECTORIA</h3>
             <hr>
@@ -199,9 +213,12 @@
             </table>
             <button>ESTADÍSTICAS AMPLIADAS</button>
         </div>
-        <div class="PALMARÉS">
-            <h3>PALMARÉS</h3>
+        <div class="RESOLUTION">
+            <h3>RESOLUTION</h3>
             <hr>
+            <p>"History has been written in the 
+                past and history will be written once again. 
+                You have my word."</p>
         </div>
     </div>
     <hr>
@@ -211,7 +228,7 @@
     <div id="photo-shop">
         <div class="photo">
             <div class="photo-text">
-
+                <h2>VER GALERÍA</h2>
             </div>
             <div class="photo-box">
                 <div class="photo1"></div>
@@ -223,6 +240,14 @@
             <div class="shop-text">
             </div>
             <div class="shop-box">
+                <button class="bu1"></button>
+                <button class="bu2"></button>
+            </div>
+            <div class="shop-po">
+                <img src="img/sub2/유니폼1.png" alt="u1">
+                <a href="#"><button class="bu1">COMPRA AHORA</button></a>
+                <img src="img/sub2/유니폼2.png" alt="u2">
+                <a href="#"><button class="bu2">COMPRA AHORA</button></a>
             </div>
         </div>
     </div>
