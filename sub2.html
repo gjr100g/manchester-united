@@ -47,6 +47,48 @@
             });
         });
 
+       // 상품 스라이더 자바스크립 입니다
+       $(function(){
+            $('.button1').click(function(){
+            $('.next-s li:last').prependTo('.next-s');
+            $('.next-s').css('margin-left',-282);
+            $('.next-s').stop().animate({marginLeft:0},800);
+            });
+
+            $(".button2").click(function(){
+                $(".next-s").stop().animate({marginLeft:-282},800,function(){
+                    $(".next-s li:first").appendTo(".next-s");
+                    $(".next-s").css({marginLeft:0});
+                });
+            });
+        });
+
+
+        // 비디오 나오는칸 제이쿼리 입니다
+        $(function(){
+            $('.video').click(function(){
+                $('#video-outer').fadeIn(800);
+                $('#video').fadeIn(800);
+            });
+        });
+        $(function(){
+            $('#video-outer button').click(function(){
+                $('#video-outer').hide();
+                $('#video').hide();
+            });
+        });
+
+
+        // 선수선택 제이쿼리입니다
+        $(function(){
+            $('.PLAYERS-text .button').click(function(){
+                $('#PLAYERS-menu').css({opacity: 1});
+            });
+            $('#PLAYERS-menu button').click(function(){
+                $('#PLAYERS-menu').css({opacity: 0});
+            });
+        });
+
     </script>
 </head>
 <body>
@@ -98,12 +140,12 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">VIDEOS</a></li>
-                        <li><a href="#">FIXTURES</a></li>
-                        <li><a href="#">PLAYERS</a></li>
-                        <li><a href="#">SHOP</a></li>
+                        <li><a href="sub1.html">ABOUT</a></li>
+                        <li><a href="sub1.html">NEWS</a></li>
+                        <li><a href="sub1.html">VIDEOS</a></li>
+                        <li><a href="sub1.html">FIXTURES</a></li>
+                        <li><a href="sub1.html">PLAYERS</a></li>
+                        <li><a href="sub1.html">SHOP</a></li>
                     </ul>
                 </nav>
                 <a href="#">
@@ -120,16 +162,123 @@
             </div>
         </div>
     </header>
+    <!-- 선수 비디오 실행 칸 입니다 -->
+
+    <div id="video-outer">
+        <button ><h2>X</h2></button>
+    </div>
+    <iframe id="video" width="1182" height="665" src="https://www.youtube.com/embed/fnBjRMqIlpA"
+    title="YouTube video player" allow="accelerometer; autoplay;
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+
+
+
+
+
     <!-- 선수이름,사진 배경 입니다 //////////////////
     ///////////////////////////////////////////////-->
     <div id="PLAYERS">
+        <div id="PLAYERS-menu">
+            <button>X</button>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo1"></div></a>
+                <h2>7</h2>
+                <p>호날두</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo2"></div></a>
+                <h2>11</h2>
+                <p>그린우드</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo3"></div></a>
+                <h2>10</h2>
+                <p>레시포드</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo4"></div></a>
+                <h2>9</h2>
+                <p>마시알</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo5"></div></a>
+                <h2>17</h2>
+                <p>카바니</p>
+            </div>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo6"></div></a>
+                <h2>20</h2>
+                <p>타이스총</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo7"></div></a>
+                <h2>5</h2>
+                <p>포그바</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo8"></div></a>
+                <h2>6</h2>
+                <p>마티치</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo9"></div></a>
+                <h2>15</h2>
+                <p>반더비크</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo10"></div></a>
+                <h2>12</h2>
+                <p>브페</p>
+            </div>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo11"></div></a>
+                <h2>4</h2>
+                <p>멕토미니</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo12"></div></a>
+                <h2>30</h2>
+                <p>디알로</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo13"></div></a>
+                <h2>24</h2>
+                <p>페르난데스</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo14"></div></a>
+                <h2>19</h2>
+                <p>린가드</p>
+            </div>
+            <hr>
+            <div class="PLAYERS">
+                <a href="#"><div class="photo photo15"></div></a>
+                <h2>27</h2>
+                <p>가넛</p>
+            </div>
+            
+            
+        </div>
         <div class="PLAYERS-p"> 
             <div class="PLAYERS-text-back">
             </div> 
+            
         </div>
         <div class="PLAYERS-box">
             <div class="PLAYERS-text">
-                <div class="button">선수선택</div>
+                <div class="button">선수선택<img src="img/sub2/ccc.png" alt=""></div>
                 <p>Cristiano</p>
                 <h2>Ronaldo</h2>
             </div>
@@ -211,7 +360,6 @@
                     <td>Minutos jugados</td>
                 </tr>
             </table>
-            <button>ESTADÍSTICAS AMPLIADAS</button>
         </div>
         <div class="RESOLUTION">
             <h3>RESOLUTION</h3>
@@ -231,13 +379,14 @@
                 <h2>VER GALERÍA</h2>
             </div>
             <div class="photo-box">
-                <div class="photo1"></div>
-                <div class="photo2"></div>
-                <div class="photo3"></div>
+                <a href="#"><div class="photo1"></div></a>
+                <a href="#"><div class="photo2"></div></a>
+                <a href="#"><div class="photo3"></div></a>
             </div>
         </div>
         <div class="shop">
             <div class="shop-text">
+                <h2>SHOP</h2>
             </div>
             <div class="shop-box">
                 <button class="bu1"></button>
@@ -256,7 +405,18 @@
     /////////////////////////////////////////
     ///////////////////////////////////////// -->
     <div id="next">
-
+        <div class="next-box">
+            <ul class="next-s">
+                <li><a href="#"><div class="next1"></div></a></li>
+                <li><a href="#"><div class="next2"></div></a></li>
+                <li><a href="#"><div class="next3"></div></a></li>
+                <li><a href="#"><div class="next4"></div></a></li>
+                <li><a href="#"><div class="next5"></div></a></li>
+                <li><a href="#"><div class="next6"></div></a></li>
+            </ul>
+            <div class="button1"><img src="img/sub2/pngwing1 - 복사본.png" alt=""></div>
+            <div class="button2"><img src="img/sub2/pngwing1.png" alt=""></div>
+        </div>
     </div>
 
 
@@ -277,8 +437,8 @@
                         </div>
                         <div class="a2">
                             <div>
-                                <p><strong>Address:</strong>
-                                92-94 High St, Oxford OX1 4BJ, England
+                                <p><strong>주소:</strong>
+                                단원구 고잔동 535-2번지 601호 
                                 </p>
                             </div>
                         </div>
@@ -290,8 +450,8 @@
                         </div>
                         <div class="a2">
                             <div>
-                                <p><strong>Address:</strong>
-                                92-94 High St, Oxford OX1 4BJ, England
+                                <p><strong>전화번호:</strong>
+                                ###-####-####
                                 </p>
                             </div>
                         </div>
@@ -303,8 +463,8 @@
                         </div>
                         <div class="a2">
                             <div>
-                                <p><strong>Address:</strong>
-                                92-94 High St, Oxford OX1 4BJ, England
+                                <p><strong>이메일:</strong>
+                                #####@#######.####
                                 </p>
                             </div>
                         </div>
