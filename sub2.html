@@ -36,6 +36,9 @@
         });       
 
         // 상점 유니폼 슬라이드
+
+
+
         $(function(){
             $(".bu1").click(function(){
                 $('.shop-po').css({marginLeft:"105px"})
@@ -47,7 +50,24 @@
             });
         });
 
-       // 상품 스라이더 자바스크립 입니다
+
+
+        if(matchMedia("screen and (max-width: 1429px)").matches)
+        {
+            $(function(){
+                $(".bu1").click(function(){
+                    $('.shop-po').css({marginLeft:"-175px"})
+                });
+            });
+            $(function(){
+                $(".bu2").click(function(){
+                    $('.shop-po').css({marginLeft:"-1000px"})
+                });
+            });
+        }
+
+        
+       // 상품 슬라이더 자바스크립 입니다
        $(function(){
             $('.button1').click(function(){
             $('.next-s li:last').prependTo('.next-s');
@@ -82,10 +102,10 @@
         // 선수선택 제이쿼리입니다
         $(function(){
             $('.PLAYERS-text .button').click(function(){
-                $('#PLAYERS-menu').css({opacity: 1});
+                $('#PLAYERS-menu').fadeIn(800);
             });
             $('#PLAYERS-menu button').click(function(){
-                $('#PLAYERS-menu').css({opacity: 0});
+                $('#PLAYERS-menu').hide();
             });
         });
 
@@ -186,97 +206,98 @@
                 <h2>7</h2>
                 <p>호날두</p>
             </div>
-            <hr>
+    
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo2"></div></a>
                 <h2>11</h2>
                 <p>그린우드</p>
             </div>
-            <hr>
+            
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo3"></div></a>
                 <h2>10</h2>
                 <p>레시포드</p>
             </div>
-            <hr>
+         
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo4"></div></a>
                 <h2>9</h2>
                 <p>마시알</p>
             </div>
-            <hr>
+         
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo5"></div></a>
                 <h2>17</h2>
                 <p>카바니</p>
             </div>
+       
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo6"></div></a>
                 <h2>20</h2>
                 <p>타이스총</p>
             </div>
-            <hr>
+     
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo7"></div></a>
                 <h2>5</h2>
                 <p>포그바</p>
             </div>
-            <hr>
+        
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo8"></div></a>
                 <h2>6</h2>
                 <p>마티치</p>
             </div>
-            <hr>
+        
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo9"></div></a>
                 <h2>15</h2>
                 <p>반더비크</p>
             </div>
-            <hr>
+     
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo10"></div></a>
                 <h2>12</h2>
                 <p>브페</p>
             </div>
+  
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo11"></div></a>
                 <h2>4</h2>
                 <p>멕토미니</p>
             </div>
-            <hr>
+ 
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo12"></div></a>
                 <h2>30</h2>
                 <p>디알로</p>
             </div>
-            <hr>
+      
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo13"></div></a>
                 <h2>24</h2>
                 <p>페르난데스</p>
             </div>
-            <hr>
+     
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo14"></div></a>
                 <h2>19</h2>
                 <p>린가드</p>
             </div>
-            <hr>
+       
             <div class="PLAYERS">
                 <a href="#"><div class="photo photo15"></div></a>
                 <h2>27</h2>
                 <p>가넛</p>
             </div>
-            
+      
             
         </div>
         <div class="PLAYERS-p"> 
-            <div class="PLAYERS-text-back">
-            </div> 
             
         </div>
         <div class="PLAYERS-box">
+            <div class="PLAYERS-text-back"></div> 
             <div class="PLAYERS-text">
                 <div class="button">선수선택<img src="img/sub2/ccc.png" alt=""></div>
                 <p>Cristiano</p>
