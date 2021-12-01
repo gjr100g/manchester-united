@@ -40,11 +40,11 @@
     #MATCHES .MATCHES-box-text{width:100%; height: 40px; }
     #MATCHES .MATCHES-box1{width: 90%; height: 500px; margin: 0 auto;}
         .MATCHES-box1 table{width: 100%; height: 400px; border-collapse : collapse;}
-        .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);}
+        .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);font-size: 12px;}
         .MATCHES-box1 table td:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
         .MATCHES-box1 table td:nth-last-of-type(2){text-align: center; width: 40%;}
         .MATCHES-box1 table td:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}
-        .MATCHES-box1 table th{background-color: rgb(46, 46, 46); color: white;}
+        .MATCHES-box1 table th{background-color: rgb(46, 46, 46); color: white;font-size: 17px;}
         .MATCHES-box1 table th:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
         .MATCHES-box1 table th:nth-last-of-type(2){text-align: center; width: 40%;}
         .MATCHES-box1 table th:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}
@@ -290,11 +290,12 @@ margin: 0 auto; padding: 40px 0;}
 #MATCHES .MATCHES-box-text{width:100%; height: 15%; }
 #MATCHES .MATCHES-box1{width: 70%; height: 500px; margin: 0 auto;}
     .MATCHES-box1 table{width: 100%; height: 400px; border-collapse : collapse;}
-    .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);}
+    .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);font-size: 13px;}
     .MATCHES-box1 table td:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
     .MATCHES-box1 table td:nth-last-of-type(2){text-align: center; width: 40%;}
     .MATCHES-box1 table td:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}
-    .MATCHES-box1 table th{background-color: rgb(46, 46, 46); color: white;}
+    .MATCHES-box1 table th{background-color: rgb(46, 46, 46); color: white; font-size: 18px;
+    padding-bottom: 3px;}
     .MATCHES-box1 table th:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
     .MATCHES-box1 table th:nth-last-of-type(2){text-align: center; width: 40%;}
     .MATCHES-box1 table th:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}
@@ -513,11 +514,11 @@ left: 50%; margin: 0 -705px; padding: 40px 0;}
 #MATCHES .MATCHES-box-text{width: 100%; height: 15%;}
 #MATCHES .MATCHES-box1{width: 35%; height: 100%; float: left;}
     .MATCHES-box1 table{width: 100%; height: 85%; border-collapse : collapse;}
-    .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);}
+    .MATCHES-box1 table td{background-color: rgb(17, 17, 17); color: rgb(211, 211, 211);font-size: 13px;}
     .MATCHES-box1 table td:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
     .MATCHES-box1 table td:nth-last-of-type(2){text-align: center; width: 40%;}
     .MATCHES-box1 table td:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}
-    .MATCHES-box1 table th{background-color: rgb(46, 46, 46); color: white;}
+    .MATCHES-box1 table th{background-color: rgb(46, 46, 46); color: white;font-size: 18px;}
     .MATCHES-box1 table th:nth-last-of-type(1){padding: 0 45px 0 0; text-align: right; width: 30%;}
     .MATCHES-box1 table th:nth-last-of-type(2){text-align: center; width: 40%;}
     .MATCHES-box1 table th:nth-last-of-type(3){padding: 0 0 0 45px; text-align: left; width: 30%;}

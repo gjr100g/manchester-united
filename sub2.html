@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="css/sub2.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
+
+        if(matchMedia("screen and (max-width: 599px)").matches){
+            console.log("mobile"); 
+        }else if(matchMedia("screen and (max-width: 1429px)").matches){
+            console.log("tablet"); 
+        }else if(matchMedia("screen and (min-width: 1430px)").matches){ 
+            console.log("desktop"); 
+        } 
+        window.onresize = function(){ 
+            document.location.reload(); 
+        };
+
+
+    
+
         // 목록 아이콘 누굴경우 제이쿼리
 
         $(function(){
@@ -61,7 +76,22 @@
             });
             $(function(){
                 $(".bu2").click(function(){
-                    $('.shop-po').css({marginLeft:"-1000px"})
+                    $('.shop-po').css({marginLeft:"-995px"})
+                });
+            });
+        }
+
+
+        if(matchMedia("screen and (max-width: 599px)").matches)
+        {
+            $(function(){
+                $(".bu1").click(function(){
+                    $('.shop-po').css({marginLeft:"-100px"})
+                });
+            });
+            $(function(){
+                $(".bu2").click(function(){
+                    $('.shop-po').css({marginLeft:"-930px"})
                 });
             });
         }
@@ -102,10 +132,10 @@
         // 선수선택 제이쿼리입니다
         $(function(){
             $('.PLAYERS-text .button').click(function(){
-                $('#PLAYERS-menu').fadeIn(800);
+                $('#PLAYERS-menu').slideToggle(800);
             });
             $('#PLAYERS-menu button').click(function(){
-                $('#PLAYERS-menu').hide();
+                $('#PLAYERS-menu').slideUp();
             });
         });
 
@@ -320,70 +350,71 @@
     <div id="information"> 
         <img src="img/sub2/logo2.png" alt="logo2">
         <div class="TRAYECTORIA">
-            <h3>TRAYECTORIA</h3>
+            <h3>클럽 경력</h3>
             <hr>
             <ul>
-                <li>SC Bron Terraillon (1995-96)</li>
-                <li>Categorías inferiores del Olympique de Lyon (1996-04)</li>
-                <li>Olympique de Lyon (2004-09)</li>
-                <li>Real Madrid (2009- )</li>
+                <li>스포르팅 CP (2002-2003)</li>
+                <li>맨체스터 유나이티드 (2003-09)</li>
+                <li>레알 마드리드 (2009-18)</li>
+                <li>유벤투스 (2018-21)</li>
+                <li>맨체스터 유나이티드 (2021- )</li>
             </ul>
         </div>
         <div class="DATOS-PERSONALES">
-            <h3>DATOS PERSONALES</h3>
+            <h3>개인 정보</h3>
             <hr>
             <table>
                 <tr>
-                    <th>Nombre</th><th></th>
+                    <th>이름</th><th></th>
                 </tr>
                 <tr>
-                    <td>Cristiano Ronaldo</td><td></td>
+                    <td>크리스티아노 호날두</td><td></td>
                 </tr>
                 <tr>
-                    <th>Lugar de nacimiento</th><th>Peso</th>
+                    <th>출생지</th><th>몸무게</th>
                 </tr>
                 <tr>
-                    <td>Lyon (Francia)</td><td>81,2 kg</td>
+                    <td>포르투갈</td><td>81,2 kg</td>
                 </tr>
                 <tr>
-                    <th>Fecha de nacimiento</th><th>Altura</th>
+                    <th>생년월일</th><th>신장</th>
                 </tr>
                 <tr>
                     <td>19/12/1987</td><td>1,85 m</td>
                 </tr>
                 <tr>
-                    <th>Posición</th><th></th>
+                    <th>포지션</th><th></th>
                 </tr>
                 <tr>
-                    <td>Delantero</td><td></td>
+                    <td>FW</td><td></td>
                 </tr>
                 
             </table>
         </div> 
         <div class="ESTADÍSTICAS">
-            <h3>ESTADÍSTICAS</h3>
+            <h3>2121 시즌 기록</h3>
             <hr>
             <table>
                 <tr>
-                    <th>17</th>
+                    <th>10</th>
+                    <th>2</th>
+                </tr>
+                <tr>
+                    <td>득점</td>
+                    <td>도움</td>
+                </tr>
+                <tr>
                     <th>15</th>
+                    <th>1191</th>
                 </tr>
                 <tr>
-                    <td>P. Jugados</td>
-                    <td>Goles</td>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <th>1489</th>
-                </tr>
-                <tr>
-                    <td>Asistencias</td>
-                    <td>Minutos jugados</td>
+                    <td>출장</td>
+                    <td>플레이 시간</td>
                 </tr>
             </table>
         </div>
         <div class="RESOLUTION">
-            <h3>RESOLUTION</h3>
+            <h3>각오</h3>
             <hr>
             <p>"History has been written in the 
                 past and history will be written once again. 
@@ -397,7 +428,7 @@
     <div id="photo-shop">
         <div class="photo">
             <div class="photo-text">
-                <h2>VER GALERÍA</h2>
+                <h2>갤러리</h2>
             </div>
             <div class="photo-box">
                 <a href="#"><div class="photo1"></div></a>
@@ -407,7 +438,7 @@
         </div>
         <div class="shop">
             <div class="shop-text">
-                <h2>SHOP</h2>
+                <h2>상품</h2>
             </div>
             <div class="shop-box">
                 <button class="bu1"></button>
@@ -415,9 +446,9 @@
             </div>
             <div class="shop-po">
                 <img src="img/sub2/유니폼1.png" alt="u1">
-                <a href="#"><button class="bu1">COMPRA AHORA</button></a>
+                <a href="#"><button class="bu1">지금 사러가기</button></a>
                 <img src="img/sub2/유니폼2.png" alt="u2">
-                <a href="#"><button class="bu2">COMPRA AHORA</button></a>
+                <a href="#"><button class="bu2">지금 사러가기</button></a>
             </div>
         </div>
     </div>
@@ -449,8 +480,8 @@
         <div class="footer-box">
             <!-- 첫번쨰 박스 입니다 -->
             <div class="text-box">
-                <h4>GET IN TOUCH</h4>
-                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <h4>사무국 정보</h4>
+
                 <ul>
                     <li>
                         <div class="a1">
@@ -495,7 +526,7 @@
 
             <!-- 두번째 박스 입니다 -->
             <div class="text-box">
-                <h4>LATEST NEWS</h4>
+                <h4>최근 뉴스</h4>
                 <a href="#">
                     <div class="LATEST">
                         <div class="photo"></div>
@@ -512,7 +543,7 @@
                 </a>
             </div>
             <div class="text-box">
-                <h4>SUBSCRIBE NEWLETTER</h4>
+                <h4>뉴스레터 구독</h4>
                 <p class="w">Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt ut
                      labore et dolore.</p>
