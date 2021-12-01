@@ -17,13 +17,13 @@ header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
         position: absolute; top: 0;z-index: 4;}
             /* 선수이름 배경입니다 */
             .PLAYERS-text-back{width: 100%;height: 130px; background-color: rgb(255, 0, 0); 
-            position: absolute;z-index: 1;top: 320px;opacity: 0.5;}
+            position: absolute;z-index: 1;top: 320px;opacity: 0.4;}
             /* 선수 메인 창 입니다 */
             .PLAYERS-box{width: 100%; height:100%;z-index: 4;position:relative;
                 top: 0; }
             /* 선수선택 메뉴 입니다 */
             #PLAYERS-menu{position: absolute; width: 90%;height: 300px; top: 85px; background-color:rgb(226, 226, 226);
-            left: 50%; margin-left: -45%;border-radius: 20px;z-index:20;overflow: auto;display:none}
+            left: 50%; margin-left: -45%;border-radius: 20px;z-index:5;overflow: auto;display:none}
                 #PLAYERS-menu button{position: absolute; top: 5px; right: 5px; width: 50px; height: 50px;
                 background-color: white; border-radius: 50px;font-size: 30px;font-weight: bold;cursor: pointer;}
                 #PLAYERS-menu hr{width: 0; background-color: gray; border: solid gray 1px;}
@@ -142,10 +142,10 @@ header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
                             .shop-po img:nth-of-type(1){width: 200px;margin-top: 30px;float: left;}
                             .shop-po .bu1{position: absolute; top: 220px; left: 0px; width: 200px;font-weight:bold;
                             height: 40px; font-size: 20px;background-color: rgb(216, 0, 0);color: white;
-                            cursor: pointer;padding-bottom: 3px;}
+                            cursor: pointer;padding-bottom: 3px;text-align: center;line-height: 40px;}
                             .shop-po .bu2{position: absolute; top: 220px;right: 0px; width: 200px;font-weight:bold;
                             height: 40px; font-size: 20px;background-color: rgb(216, 0, 0);color: white;
-                             cursor: pointer;padding-bottom: 3px;}
+                             cursor: pointer;padding-bottom: 3px;text-align: center;line-height: 40px;}
                             .shop-po img:nth-of-type(2){width: 200px; margin-top: 30px;float: right;}
     
     /* <!-- 다음 선수로 넘어가는 칸 입니다   ////////
@@ -195,8 +195,8 @@ header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
 #video-outer{width: 100%; height: 100%; background-color: black; opacity: 0.8;
     position: absolute; top: 0; left: 0; z-index: 25; display: none;position: fixed;}
     #video-outer button{width: 70px; height: 70px;border-radius: 70px; position: absolute;
-    left: 50%; margin: 100px -35px; font-size: 25px; font-weight: bold;line-height: 20px;color: white;
-    background-color: rgb(136, 136, 136);cursor: pointer;}
+    left: 50%; margin: 0 -35px; font-size: 25px; font-weight: bold;line-height: 20px;color: white;
+    background-color: rgb(136, 136, 136);cursor: pointer;top: 5%;}
     #video{position: absolute; width: 90%; height: 550px;top: 50%; left: 50%; z-index: 26;
     margin: -275px -45%;display: none;position:fixed;}
     /* 선수사진, 이름, 동영상 이나오는 박스입니다    ///////
@@ -208,13 +208,13 @@ header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
         position: absolute; top: 0;z-index: 1;}
             /* 선수이름 배경입니다 */
             .PLAYERS-text-back{width: 100%;height: 400px; background-color: rgb(255, 0, 0); 
-            position: absolute; right: 50%;opacity: 0.5;transform: skewX(-20deg);}
+            position: absolute; right: 50%;opacity: 0.4;transform: skewX(-20deg);}
             /* 선수 메인 창 입니다 */
             .PLAYERS-box{width: 100%; height:100%;z-index: 4;position:relative;
                 top: 0; }
             /* 선수선택 메뉴 입니다 */
             #PLAYERS-menu{position: absolute; width: 90%;height: 300px; top: 85px; background-color:rgb(226, 226, 226);
-            left: 50%; margin-left: -45%;border-radius: 20px;z-index:20;overflow: auto;display:none ;}
+            left: 50%; margin-left: -45%;border-radius: 20px;z-index:5;overflow: auto;display:none ;}
                 #PLAYERS-menu button{position: absolute; top: 5px; right: 5px; width: 50px; height: 50px;
                 background-color: white; border-radius: 50px;font-size: 30px;font-weight: bold;cursor: pointer;}
                 #PLAYERS-menu hr{width: 0; background-color: gray; border: solid gray 1px;}
@@ -327,9 +327,10 @@ header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
                             .shop-po img:nth-of-type(1){width: 350px;margin-top: 30px;float: left;}
                             .shop-po .bu1{position: absolute; top: 300px; left: 0px; width: 350px;font-weight:bold;
                             height: 80px; font-size: 30px;background-color: rgb(216, 0, 0);color: white;
-                            cursor: pointer;}
+                            cursor: pointer;text-align: center;line-height: 80px;}
                             .shop-po .bu2{position: absolute; top: 300px;right: 30px; width: 350px;font-weight:bold;
-                            height: 80px; font-size: 30px;background-color: rgb(216, 0, 0);color: white; cursor: pointer;}
+                            height: 80px; font-size: 30px;background-color: rgb(216, 0, 0);color: white;
+                            cursor: pointer;text-align: center;line-height: 80px;}
                             .shop-po img:nth-of-type(2){width: 400px; margin-top: 30px;float: right;}
     
     /* <!-- 다음 선수로 넘어가는 칸 입니다   ////////
@@ -398,7 +399,7 @@ margin: -275px -600px;display: none;position:fixed;}
     position: absolute; top: 0;z-index: 1;}
         /* 선수이름 배경입니다 */
         .PLAYERS-text-back{width: 1500px;height: 400px; background-color: rgb(255, 0, 0); 
-        position: absolute; right: 50%;opacity: 0.5;transform: skewX(-20deg);}
+        position: absolute; right: 50%;opacity: 0.4;transform: skewX(-20deg);}
         /* 선수 메인 창 입니다 */
         .PLAYERS-box{width: 1410px; height:100%;z-index: 4;position:relative;
             left: 50%;top: 0; margin-left: -705px;}
@@ -516,9 +517,10 @@ margin: -100px; opacity: 0.7;}
             .shop-po img:nth-of-type(1){width: 250px; margin-left: -20px;margin-top: 30px;float: left;}
             .shop-po .bu1{position: absolute; bottom:80px;left: -10px; width: 240px;font-weight:bold;
             height: 50px; font-size: 20px;background-color: rgb(216, 0, 0);color: white;
-            cursor: pointer;}
+            cursor: pointer;text-align: center;line-height: 50px;}
             .shop-po .bu2{position: absolute; bottom:80px;right: 20px; width: 240px;font-weight:bold;
-            height: 50px; font-size: 20px;background-color: rgb(216, 0, 0);color: white; cursor: pointer;}
+            height: 50px; font-size: 20px;background-color: rgb(216, 0, 0);color: white; 
+            cursor: pointer;text-align: center;line-height: 50px;}
             .shop-po img:nth-of-type(2){width: 280px; margin-left: -20px;margin-top: 30px;float: right;}
 
 /* <!-- 다음으로 넘어가는 칸 입니다   ////////
